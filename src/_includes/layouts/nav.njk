@@ -1,0 +1,28 @@
+{% css %}
+.logo-text {
+    font-size: var(--bulma-title-size);
+    font-weight: var(--bulma-title-weight);
+    --bulma-title-color: var(--bulma-text-strong);
+    --bulma-title-size: var(--bulma-size-3);
+    --bulma-title-weight: var(--bulma-weight-extrabold);
+    --bulma-title-strong-color: inherit;
+    --bulma-title-strong-weight: inherit;
+}
+{% endcss %}
+{% js %}
+function toggleSidebar() {
+    const sidebar = document.getElementById("sidebar-menu").classList.toggle("is-hidden-touch");
+    document.getElementById("sidebar-toggle").classList.toggle("is-active");
+}
+{% endjs %}
+<nav class="navbar is-primary has-shadow px-5">
+    <div class="navbar-brand">
+        <a class="navbar-item logo-text" href="/">{{ metadata.title }}</a>
+        <a id="sidebar-toggle" class="navbar-burger" role="button" aria-label="menu" aria-expanded="false" onclick="toggleSidebar()">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+</nav>
