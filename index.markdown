@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Butterscotch!
+title: Home
 ---
 
 Hello!
