@@ -1,0 +1,28 @@
+<!--https://dev.twitter.com/cards/-->
+{% if page.largeimage %}
+<meta name="twitter:card"  content="summary_large_image">
+<meta name="twitter:image" content="{{ site.url }}{{ page.largeimage }}">
+{% elsif page.image %}
+<meta name="twitter:card"  content="summary">
+<meta name="twitter:image" content="{{ site.url }}{{ page.image }}">
+{% else %}
+<meta name="twitter:card"  content="summary">
+<meta name="twitter:image" content="{{ site.title_image }}">
+{% endif %}
+
+<meta name="twitter:site"    content="@{{ site.twitter_username }}">
+
+{% if page.author %}
+<meta name="twitter:creator" content="@{{ page.author }}">
+{% endif %}
+
+<meta name="twitter:title"   content="{{ page.title }}">
+
+{% if page.summary %}
+<meta name="twitter:description" content="{{ page.summary }}">
+{% elsif page.content %}
+<meta name="twitter:description" content="{{ page.content | truncate: 200 | strip_html }}">
+{% else %}
+<meta name="twitter:description" content="{{ site.description }}">
+{% endif %}
+<!--End of Twitter Cards-->

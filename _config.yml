@@ -27,8 +27,14 @@ url: "https://bscotch.ca" # the base hostname & protocol for your site, e.g. htt
 twitter_username: BscotchVanilla
 github_username:  ButterscotchV
 
+markdown: kramdown
+github: [metadata]
+
+# Twitter Card
+title_image: "{{ site.url }}/images/avatar.png"
+
 # Build settings
-theme: minima
+remote_theme: pmarsceill/just-the-docs
 #plugins:
 #  - jekyll-feed
 
