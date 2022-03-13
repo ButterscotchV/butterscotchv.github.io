@@ -31,7 +31,7 @@ markdown: kramdown
 github: [metadata]
 
 # Twitter Card
-title_image: "{{ site.url }}/images/avatar.png"
+title_image: "/images/avatar.png"
 
 # Build settings
 remote_theme: pmarsceill/just-the-docs
