@@ -1,7 +1,10 @@
 ---
 layout: page
 title: Web Safety
+
 has_children: true
+has_toc: false
+
 nav_order: 1
 description: "A guide to being safer with your passwords and accounts"
 ---
