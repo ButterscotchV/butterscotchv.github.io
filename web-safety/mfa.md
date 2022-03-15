@@ -5,6 +5,8 @@ title: Multi-Factor Authentication
 parent: Web Safety
 
 nav_order: 0
+image: /img/lock_icon.png
+description: "A guide to setting up multi-factor authentication"
 ---
 
 # Multi-factor authentication introduction
