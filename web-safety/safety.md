@@ -35,3 +35,6 @@ Bitwarden is by far my favourite. It's free (with an *optional* subscription for
 LastPass is only *partially* free. You are restricted to using only one device "type" with the free plan, either PC or mobile.
 
 <https://www.lastpass.com/>
+
+# See Also
+ - <https://mshelton.medium.com/password-managers-for-beginners-d1f49866f80f>
