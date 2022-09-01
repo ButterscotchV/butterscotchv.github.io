@@ -28,7 +28,7 @@ Multi-factor authentication (MFA) is a method of securing your accounts with a s
 
 (You can find all download links on their [website](https://www.enpass.io/downloads/))
 
-# Bitwarden
+## Bitwarden
 [Mobile / Desktop / Browser](https://bitwarden.com/download/)
 
 (You can find all download links on their [website](https://bitwarden.com/download/))
