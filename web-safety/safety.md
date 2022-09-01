@@ -10,21 +10,34 @@ image: /img/lock_icon.png
 description: "A guide to being safer with your passwords and accounts"
 ---
 
-# Web safety introduction
+# Introduction
 For basic web safety, you should use a password manager to keep your passwords safe.
 
-This guide will teach you how to make using a password manager as easy as using the password store included within the browser.
+This guide will teach you how to make using a password manager as easy as using the password storage included within the browser.
+
+# Don't store passwords with a browser
+Don't store passwords in your browser's password storage! If you don't need to use a password to unlock it, then any program on your computer can access your passwords and steal them within a fraction of a second.
+
+A password manager can work just as easily as your browser, but provide an additional layer of security for when a data breach occurs.
 
 # Why not use my browser? (optional read)
 When you store your passwords in your browser, they are stored in something called [DPAPI](https://en.wikipedia.org/wiki/Data_Protection_API). When stored within this database, the passwords are encrypted by a key that can be retrieved easily and automatically by any program.
 
 Essentially what this means is that the passwords can be stolen **very** easily. The solution? Using a password manager instead can be just as convenient as using your browser but stores it encrypted using your own password, so any passwords stored will need *your* password to read it.
 
+# What more can I do?
+For a second layer of protection, you can use [multi-factor authentication](mfa.md).
+
 # Options
 ## Bitwarden
 Bitwarden is by far my favourite. It's free (with an *optional* subscription for a very low price), open source, and it's fairly easy to use.
 
 <https://bitwarden.com/>
+
+## Enpass
+Enpass is free and lets you store your passwords on your own computer instead of on the cloud, this allows you to choose who and what you trust with your data.
+
+<https://www.enpass.io/>
 
 ## 1Password
 1Password requires a subscription to use but it's worth what you pay for it.
