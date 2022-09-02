@@ -16,23 +16,23 @@ For basic web safety, you should use a password manager to keep your passwords s
 This guide will teach you how to make using a password manager as easy as using the password storage included within the browser.
 
 ## Don't store passwords with a browser
-Don't store passwords in your browser's password storage! If you don't need to use a password or biometrics to unlock it, then any program on your computer will be able to access your passwords and steal them within a fraction of a second.
+Don't store passwords in your browser's password storage! If your browser doesn't require a password or biometrics to access your stored passwords, then any program on your computer will be able to access your passwords and steal them within a fraction of a second.
 
-A password manager can work just as easily as your browser, but provide an additional layer of security for when a data breach occurs.
+A password manager can work just as easily as your browser's, but provides an additional layer of security for when a data breach occurs.
 
-### Why not use my browser? (optional read)
-When you store your passwords in your browser, they are stored in something called [DPAPI](https://en.wikipedia.org/wiki/Data_Protection_API). When stored within this database, the passwords are encrypted by a key that can be retrieved easily and automatically by any program.
+### Why not use my browser?
+When you store your passwords in your browser, they are stored in something called a ["Data Protection API," or DPAPI](https://en.wikipedia.org/wiki/Data_Protection_API). While that sounds secure just from the name, it's simple to access. When stored within this database, the passwords are encrypted by a key that can be read easily and automatically by any program, as the key is basically stored in a text file on your computer at a location that is very well known. This means that the passwords can be stolen **very** easily.
 
-Essentially what this means is that the passwords can be stolen **very** easily. The solution? Using a password manager instead can be just as convenient as using your browser but stores it encrypted using your own password, so any passwords stored will need *your* password to read it.
+## So why use a password manager instead?
+A password manager is an app or program dedicated to storing and creating passwords outside a browser, secured with a master password that you create. Essentially, this means you only need to remember ***one*** strong password to log in to all your accounts. The manager can create incredibly strong, randomized passwords for each account, so no account ever has the same password as another one, meaning that if one is compromised somehow, it can't affect any other site or service. Because the manager requires a password to access all of your information, one that only you know, it can't be read by any other program.
 
-## What is a password manager? (optional read)
-A password manager is an app or program that stores your passwords, secured with a password. Using a password to secure your password manager means that when a data breach occurs, it will take a lot of effort to get your passwords from it, giving you time to re-secure everything.
+If you're reluctant to use a password manager because you don't want to copy and paste all the information into your browser, don't worry, that isn't an issue. Most managers will have a browser extension that can paste the username and password for you, just like your browser would.
 
 # What are my options?
 Within the [options section](#options) is a list of password managers with a small snippet about each one. You can make your own judgement about what option you would like to use, but it's important to consider all of your options and what pros and cons they may have.
 
 # What more can I do?
-For a second layer of protection, you can use [multi-factor authentication](mfa.md).
+For a second layer of protection, you can use [multi-factor authentication](mfa.md), also known as Two-Factor Authentication (or 2FA) using an app that generates a random passcode every 30 seconds. This makes it very difficult for someone to log into your account without having physical access to your phone.
 
 # Options
 ## Bitwarden

@@ -38,11 +38,6 @@ Multi-factor authentication (MFA) is a method of securing your accounts with a s
  - [Android](https://play.google.com/store/apps/details?id=com.azure.authenticator)
  - [iOS](https://apps.apple.com/us/app/microsoft-authenticator/id983156458)
 
-## Google Authenticator
-[Mobile](https://support.google.com/accounts/answer/1066447)
- - [Android](https://play.google.com/store/apps/details?id=com.google.android.apps.authenticator2)
- - [iOS](https://apps.apple.com/us/app/google-authenticator/id388497605)
-
 ## LastPass Authenticator
 [Mobile / Desktop](https://lastpass.com/auth/)
  - [Android](https://play.google.com/store/apps/details?id=com.lastpass.authenticator)
