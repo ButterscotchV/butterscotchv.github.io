@@ -8,6 +8,7 @@ has_children: false
 has_toc: false
 
 nav_order: 0
+image: /img/avatar.png
 description: "How to remove old trackers from the SteamVR config"
 ---
 
