@@ -37,6 +37,8 @@ Note: The input does not include the skeleton, the outline is purely for illustr
 
 The images below illustrate the internal skeleton of SlimeVR calculated from the rotational data from the two SlimeVR trackers and a resulting SteamVR waist tracker attached to the bottom of the skeleton's hip bone. The rotation of the chest tracker is used for the top bone of the spine and the rotation of the hip tracker is used for the bottom bone of the spine.
 
+Note: The illustrated skeleton does not accurately represent the skeleton used for SlimeVR, it is an artistic approximation.
+
 ![An image of a SlimeVR skeleton with SlimeVR trackers and a SteamVR tracker on the waist, side view]({{ site.url }}/img/vr/slime-skeleton-1.png)
 ![An image of a SlimeVR skeleton with SlimeVR trackers and a SteamVR tracker on the waist, angled view]({{ site.url }}/img/vr/slime-skeleton-1-1.png)
 
