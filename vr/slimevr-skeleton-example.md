@@ -51,4 +51,4 @@ Note: The output does not include the skeleton, the outline is purely for illust
 
 # Credit
 
-The cases used for the illustration of SlimeVR trackers are the [Hyperion cases (https://github.com/Smeltie/Hyperion)](https://github.com/Smeltie/Hyperion) by Smeltie.
+The cases used for the illustration of SlimeVR trackers are the [Hyperion cases (https://github.com/Smeltie/Hyperion)](https://github.com/Smeltie/Hyperion) by Smeltie and contributors as listed on the GitHub page.
