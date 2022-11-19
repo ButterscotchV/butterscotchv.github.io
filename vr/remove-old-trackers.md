@@ -1,8 +1,8 @@
 ---
 layout: page
-title: Removing old trackers entries
+title: Removing old trackers entries from SteamVR
 
-parent: SteamVR
+parent: VR
 
 has_children: false
 has_toc: false
@@ -10,11 +10,16 @@ has_toc: false
 nav_order: 0
 image: /img/avatar.png
 description: "How to remove old trackers from the SteamVR config"
+
+redirect_from: /steamvr/remove_old_trackers
 ---
+
+# Removing old trackers entries from SteamVR
 
 You can find the list of trackers at the bottom of the SteamVR config file `steamvr.vrsettings` in the SteamVR config folder (which can generally be found at `C:\Program Files (x86)\Steam\config\steamvr.vrsettings`).
 
 The list will look something like this:
+
 ```json
 "trackers" : {
    "/devices/SlimeVR/human://LEFT_FOOT" : "TrackerRole_LeftFoot",
@@ -31,6 +36,7 @@ The list will look something like this:
 ```
 
 You can remove whatever entries you no longer want, making sure you keep a comma at the end of each line except the last one, for example:
+
 ```json
 "trackers" : {
    "/devices/slimevr/human://CHEST" : "TrackerRole_Chest",
@@ -39,6 +45,7 @@ You can remove whatever entries you no longer want, making sure you keep a comma
 ```
 
 Or you can remove all the trackers like so:
+
 ```json
 "trackers" : {}
 ```

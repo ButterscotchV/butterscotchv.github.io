@@ -1,11 +1,13 @@
 ---
 layout: page
-title: SteamVR
+title: VR
 
 has_children: true
 has_toc: true
 
 nav_order: 3
 image: /img/avatar.png
-description: "Stuff about SteamVR"
+description: "Stuff about VR"
+
+redirect_from: /steamvr
 ---
