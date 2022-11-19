@@ -50,3 +50,7 @@ Note: The output does not include the skeleton, the outline is purely for illust
 
 ![An image of a SteamVR tracker, side view]({{ site.url }}/img/vr/slime-skeleton-2.png)
 ![An image of a SteamVR tracker, angled view]({{ site.url }}/img/vr/slime-skeleton-2-1.png)
+
+# Credit
+
+The cases used for the illustration of SlimeVR trackers is the [Hyperion case (https://github.com/Smeltie/Hyperion)](https://github.com/Smeltie/Hyperion) by Smeltie.
