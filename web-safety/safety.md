@@ -12,31 +12,31 @@ description: "A guide to being safer with your passwords and accounts"
 
 # Introduction
 
-For basic web safety, use a password manager to keep your passwords safe. This guide will show you how to use a password manager easily, just like your browser's password storage.
+For basic web safety, it's important to use a password manager to keep your passwords safe. This guide will show you how to use a password manager easily, just like your browser's password storage.
 
 ## Don't store passwords with a browser
 
-Don't store passwords in your browser's password storage! If your browser doesn't require a password or biometrics to access your stored passwords, any program on your computer can access and steal your passwords within seconds.
+Browsers often have a feature that allows you to store your passwords for easy access. However, this is not a very safe way to store your passwords. If your browser doesn't require a password or biometrics to access your stored passwords, any program on your computer can access and steal your passwords within seconds.
 
-A password manager can work just as easily as your browser's, but provides additional security in case of a data breach.
+A password manager is a better option because it provides additional security in case of a data breach. It works just as easily as your browser's password storage, but it uses a different method to keep your passwords safe.
 
 ### Why not use my browser?
 
-When you store your passwords in your browser, they are stored in a ["Data Protection API," or DPAPI](https://en.wikipedia.org/wiki/Data_Protection_API). While that sounds secure, it's easy for attackers to access. The passwords are encrypted by a key that can be easily read and automatically by any program, as the key is stored in a well-known location on your computer. This means that the passwords can be stolen **very** easily.
+When you store your passwords in your browser, they are encrypted using something called the ["Data Protection API," or DPAPI](https://en.wikipedia.org/wiki/Data_Protection_API). This sounds secure, but it's actually easy for attackers to access. The passwords are encrypted using a key that is stored in a well-known location on your computer. This means that any program can easily read and use the key to access your passwords. In other words, your passwords are not very safe when you store them in your browser.
 
 ## So why use a password manager instead?
 
-A password manager is an app or program that stores and creates passwords outside a browser, secured with a master password that you create. This means you only need to remember **_one_** strong password to log in to all your accounts. The manager can create strong, randomized passwords for each account, so no account ever has the same password as another one. If one account is compromised, it can't affect any other site or service. Because the manager requires a password to access all your information, one that only you know, it can't be read by any other program.
+A password manager is an app or program that stores and creates passwords outside of your browser. It uses a master password that you create to encrypt your passwords, so you only need to remember **_one_** strong password to log in to all your accounts. The password manager can also create strong, unique passwords for each account, so no account ever has the same password as another one. This means that if one account is compromised, it can't affect any other site or service. Because the password manager requires a password to access all your information, one that only you know, it can't be read by any other program.
 
-If you're reluctant to use a password manager because you don't want to copy and paste all the information into your browser, most managers have a browser extension that can paste the username and password for you, just like your browser would.
+If you're hesitant to use a password manager because you don't want to copy and paste all the information into your browser, most password managers have a browser extension that can paste the username and password for you, just like your browser would.
 
 # What are my options?
 
-In the [options section](#options) is a list of password managers with a small snippet about each one. You can make your own judgement about what option you would like to use, but it's important to consider all your options and their pros and cons.
+In the [options section](#options), we provide a list of password managers with a brief description of each one. You can decide which one you want to use based on your own preferences, but it's important to consider all your options and their pros and cons.
 
 # What more can I do?
 
-For extra protection, use [multi-factor authentication (MFA)](mfa.md), also known as Two-Factor Authentication (or 2FA), using an app that generates a random passcode every 30 seconds. This makes it difficult for someone to log into your account without having physical access to your phone.
+For extra protection, you can use [Multi-Factor Authentication (MFA)](mfa.md), also known as Two-Factor Authentication (or 2FA). This is a method that uses an app to generate a random passcode every 30 seconds. This makes it very difficult for someone to log into your account without having physical access to your phone.
 
 # Options
 
