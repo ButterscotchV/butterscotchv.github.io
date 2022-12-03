@@ -14,7 +14,7 @@ description: "An example of how SlimeVR uses tracker rotations"
 
 # Introduction
 
-SlimeVR uses forward kinematics to derive a position of a point on your body from tracker rotations. Games generally use inverse kinematics to get the rotations for their skeleton to match the position of a SteamVR tracker.
+SlimeVR uses forward kinematics to calculate the position of a point on your body based on the rotations of a SlimeVR tracker. Inverse kinematics is typically used by games to calculate the rotations of a virtual skeleton to match the position of a SteamVR tracker.
 
 ## To summarize:
 
