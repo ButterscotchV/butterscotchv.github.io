@@ -5,7 +5,7 @@ title: Web Safety
 has_children: true
 has_toc: false
 
-nav_order: 2
+nav_order: 3
 image: /img/lock_icon.png
 description: "A guide to being safer with your passwords and accounts"
 ---

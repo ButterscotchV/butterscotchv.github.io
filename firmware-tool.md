@@ -3,9 +3,8 @@ layout: page
 title: SlimeVR Firmware Tool
 
 nav_order: 1
-
 image: /img/avatar.png
-description: "SlimeVR Firmware Tool (Butterscotch Version)"
+description: "Links to the SlimeVR Firmware Tool and fork(s)"
 ---
 
 Hello! You can find my version of the SlimeVR firmware tool at the link below:
