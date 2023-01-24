@@ -22,7 +22,7 @@ In light of the [recent security incident involving LastPass](https://blog.lastp
 
 In order to align with the guidelines outlined in the [OWASP Password Storage Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html#pbkdf2), it is recommended to increase the number of PBKDF2 iterations from the default of 350,000 to 600,000. While Bitwarden has recently increased the default iterations for new accounts, this change does not apply retroactively. It is possible that your account may still have the previous default of 100,000 iterations set. To ensure the security of your account, it is important to review and update the PBKDF2 iterations accordingly.
 
-To enhance the security of your account by increasing the PBKDF2 iterations, navigate to the encryption key settings page under **Account Settings → Security → Keys** on the [Bitwarden Web Vault](https://vault.bitwarden.com/). Here, you can adjust the "**KDF iterations**" value to your desired setting.
+To enhance the security of your account by increasing the PBKDF2 iterations, navigate to the encryption key settings page under **Account Settings → Security → Keys** on the [Bitwarden Web Vault](https://vault.bitwarden.com/). Here, you can adjust the "**KDF iterations**" value to either the recommended minimum value of 600,000 or your desired setting.
 
 <div class="pswp-gallery">
 {% include photoswipe_image.html url='/img/web-safety/PBKDF2-iter-settings-0.png' width='1024' height='855' thumb_width='300' alt='An image illustrating where the settings page is for security keys' %}
