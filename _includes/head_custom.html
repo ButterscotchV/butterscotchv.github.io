@@ -18,6 +18,8 @@
       pswpModule: () =>
         import("{{ 'js/photoswipe/photoswipe.esm.min.js' | relative_url }}"),
       wheelToZoom: true,
+      bgClickAction: "close",
+      tapAction: "close",
     });
     lightbox.init();
   </script>
