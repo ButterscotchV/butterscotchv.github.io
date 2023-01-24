@@ -16,7 +16,7 @@ description: "An example of how SlimeVR uses tracker rotations"
 
 SlimeVR uses forward kinematics to calculate the position of a point on your body based on the rotations of a SlimeVR tracker. Inverse kinematics is typically used by games to calculate the rotations of a virtual skeleton to match the position of a SteamVR tracker.
 
-### To summarize:
+### To summarize
 
 1. SlimeVR tracker rotations -> SlimeVR Server
 2. Forward kinematics (SlimeVR) -> Rotations to positions
@@ -31,8 +31,10 @@ The images below illustrate wearing two physical trackers, a chest tracker mount
 
 _Note: The input does not include the skeleton, the outline is purely for illustrative purposes._
 
-![An image of Amber wearing SlimeVR trackers, side view]({{ site.url }}/img/vr/slime-skeleton-0.png)
-![An image of Amber wearing SlimeVR trackers, angled view]({{ site.url }}/img/vr/slime-skeleton-0-1.png)
+<div class="pswp-gallery">
+{% include photoswipe_image.html url='/img/vr/slime-skeleton-0.png' width='327' height='544' thumb_width='300' alt='An image of Amber wearing SlimeVR trackers, side view' %}
+{% include photoswipe_image.html url='/img/vr/slime-skeleton-0-1.png' width='327' height='544' thumb_width='300' alt='An image of Amber wearing SlimeVR trackers, angled view' %}
+</div>
 
 ### SlimeVR server internal skeleton
 
@@ -40,8 +42,10 @@ The images below illustrate the internal skeleton of SlimeVR calculated from the
 
 _Note: The illustrated skeleton does not accurately represent the skeleton used for SlimeVR, it is an artistic approximation._
 
-![An image of a SlimeVR skeleton with SlimeVR trackers and a SteamVR tracker on the waist, side view]({{ site.url }}/img/vr/slime-skeleton-1.png)
-![An image of a SlimeVR skeleton with SlimeVR trackers and a SteamVR tracker on the waist, angled view]({{ site.url }}/img/vr/slime-skeleton-1-1.png)
+<div class="pswp-gallery">
+{% include photoswipe_image.html url='/img/vr/slime-skeleton-1.png' width='327' height='544' thumb_width='300' alt='An image of a SlimeVR skeleton with SlimeVR trackers and a SteamVR tracker on the waist, side view' %}
+{% include photoswipe_image.html url='/img/vr/slime-skeleton-1-1.png' width='327' height='544' thumb_width='300' alt='An image of a SlimeVR skeleton with SlimeVR trackers and a SteamVR tracker on the waist, angled view' %}
+</div>
 
 ### SteamVR output
 
@@ -49,8 +53,10 @@ The images below illustrate the resulting SteamVR waist tracker. This tracker is
 
 _Note: The output does not include the skeleton, the outline is purely for illustrative purposes._
 
-![An image of a SteamVR tracker, side view]({{ site.url }}/img/vr/slime-skeleton-2.png)
-![An image of a SteamVR tracker, angled view]({{ site.url }}/img/vr/slime-skeleton-2-1.png)
+<div class="pswp-gallery">
+{% include photoswipe_image.html url='/img/vr/slime-skeleton-2.png' width='327' height='544' thumb_width='300' alt='An image of a SteamVR tracker, side view' %}
+{% include photoswipe_image.html url='/img/vr/slime-skeleton-2-1.png' width='327' height='544' thumb_width='300' alt='An image of a SteamVR tracker, angled view' %}
+</div>
 
 ## Credit
 

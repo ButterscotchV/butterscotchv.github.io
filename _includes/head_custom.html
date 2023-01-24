@@ -1,6 +1,21 @@
 <head>
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ 'apple-touch-icon.png' | relative_url }}">
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ 'favicon-32x32.png' | relative_url }}">
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ 'favicon-16x16.png' | relative_url }}">
-  <link rel="manifest" href="{{ 'site.webmanifest' | relative_url }}">
+  <!-- Metadata and Icons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ 'apple-touch-icon.png' | relative_url }}" />
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ 'favicon-32x32.png' | relative_url }}" />
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ 'favicon-16x16.png' | relative_url }}" />
+  <link rel="manifest" href="{{ 'site.webmanifest' | relative_url }}" />
+
+  <!-- PhotoSwipe https://photoswipe.com/ -->
+  <link rel="stylesheet" href="{{ 'css/photoswipe/photoswipe.css' | relative_url }}" />
+  <script type="module">
+    import PhotoSwipeLightbox from "{{ 'js/photoswipe/photoswipe-lightbox.esm.min.js' | relative_url }}";
+    const lightbox = new PhotoSwipeLightbox({
+      gallery: ".pswp-gallery",
+      children: "a",
+      pswpModule: () =>
+        import("{{ 'js/photoswipe/photoswipe.esm.min.js' | relative_url }}"),
+      wheelToZoom: true,
+    });
+    lightbox.init();
+  </script>
 </head>
