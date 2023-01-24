@@ -33,7 +33,11 @@ To enhance the security of your account by increasing the PBKDF2 iterations, nav
 
 ### Why should I enable it?
 
-Enabling the automatic clipboard clearing feature of a password manager is an important security measure. This feature automatically clears the clipboard after a certain period of time to prevent sensitive information, such as passwords, from being accidentally or maliciously copied and pasted into other applications. This can help to protect against common forms of cyber attacks, such as keylogging and clipboard hijacking, which can be used to steal personal information and gain unauthorized access to accounts. Additionally, it can also prevent others from viewing sensitive information on your device if it is lost or stolen. Enabling this feature can help to keep your passwords and other sensitive information secure and protect you from potential security breaches.
+Enabling the automatic clipboard clearing feature of a password manager is an important security measure.
+
+This feature automatically clears the clipboard after a certain period of time to prevent sensitive information, such as passwords, from being accidentally or maliciously copied and pasted into other applications. This can help to protect against common forms of cyber attacks, such as keylogging and clipboard hijacking, which can be used to steal personal information and gain unauthorized access to accounts.
+
+Additionally, it can also prevent others from viewing sensitive information on your device if it is lost, stolen, or shared. Enabling this feature can help to keep your passwords and other sensitive information secure and protect you from potential security breaches.
 
 ### How do I enable it?
 
