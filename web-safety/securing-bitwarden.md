@@ -6,7 +6,7 @@ parent: Web Safety
 
 nav_order: 1
 image: /img/lock_icon.png
-description: "A guide to setting up multi-factor authentication (MFA)"
+description: "A guide to making Bitwarden more secure"
 ---
 
 ## Securing Bitwarden introduction
