@@ -1,6 +1,6 @@
 ---
 layout: page
-title: How to Make Bitwarden More Secure
+title: How to make Bitwarden more secure
 
 parent: Web Safety
 
