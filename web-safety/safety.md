@@ -48,6 +48,12 @@ Bitwarden is by far my favourite. It's free (with an _optional_ subscription for
 
 [Beginners Guide](https://mshelton.medium.com/bitwarden-for-beginners-74cf93679457)
 
+[Bitwarden Help Center](https://bitwarden.com/help/)
+
+#### See Also
+
+[Securing Bitwarden](securing-bitwarden.md)
+
 ### Enpass
 
 Enpass is free and lets you store your passwords on your own computer instead of on the cloud, this allows you to choose who and what you trust with your data.
@@ -56,7 +62,7 @@ Enpass is free and lets you store your passwords on your own computer instead of
 
 ### 1Password
 
-1Password requires a subscription to use but it's worth what you pay for it.
+1Password requires a subscription to use but it's worth what you pay for it. They appear to have fairly good security that is maintained over time.
 
 <https://1password.com/>
 
@@ -65,6 +71,11 @@ Enpass is free and lets you store your passwords on your own computer instead of
 ### LastPass
 
 LastPass is only _partially_ free. You are restricted to using only one device "type" with the free plan, either PC or mobile. If you wish to use this service, you should consider that LastPass has many issues in the company itself, you can look at the top of the beginners guide for more information.
+
+Additionally, LastPass experienced a significant security incident where their vaults were compromised, and the information stored within them are actively being misused. You can find more information about this breach at:
+
+- <https://blog.lastpass.com/2022/12/notice-of-recent-security-incident/>
+- <https://www.wired.com/story/lastpass-breach-vaults-password-managers/>
 
 <https://www.lastpass.com/>
 

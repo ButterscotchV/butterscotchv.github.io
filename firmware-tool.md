@@ -2,6 +2,9 @@
 layout: page
 title: SlimeVR Firmware Tool
 
+has_children: false
+has_toc: false
+
 nav_order: 1
 image: /img/avatar.png
 description: "Links to the SlimeVR Firmware Tool and fork(s)"

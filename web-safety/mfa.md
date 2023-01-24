@@ -4,6 +4,9 @@ title: Multi-Factor Authentication (MFA)
 
 parent: Web Safety
 
+has_children: false
+has_toc: false
+
 nav_order: 0
 image: /img/lock_icon.png
 description: "A guide to setting up multi-factor authentication (MFA)"

@@ -1,25 +1,28 @@
 ---
 layout: page
-title: Securing Bitwarden
+title: How to Make Bitwarden More Secure
 
 parent: Web Safety
+
+has_children: false
+has_toc: false
 
 nav_order: 1
 image: /img/lock_icon.png
 description: "A guide to making Bitwarden more secure"
 ---
 
-## Securing Bitwarden introduction
+## Introduction
 
-Due to the recent LastPass vault breach, there has been a clear focus on password manager security, this has lead to the discovery of a couple issues with Bitwarden. This guide shows how to improve the security of your Bitwarden vault given the new recommendations.
+In light of the [recent security incident involving LastPass](https://blog.lastpass.com/2022/12/notice-of-recent-security-incident/), the importance of ensuring the security of password managers has come to the forefront. As a result, some vulnerabilities have been identified in Bitwarden. This guide will provide steps to enhance the security of your Bitwarden vault in accordance with the latest recommendations.
 
 ## Increasing the number of PBKDF2 iterations
 
 [Reference Bitwarden documentation](https://bitwarden.com/help/what-encryption-is-used/#changing-kdf-iterations)
 
-Following the security recommendations of the [OWASP Password Storage Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html#pbkdf2), you're recommended to increase the PBKDF2 iterations from the default of 350,000 to 600,000. Though the default of Bitwarden has been getting increased, it doesn't apply retroactively, so you may still have it set to 100,000 on your account from the previous default.
+In order to align with the guidelines outlined in the [OWASP Password Storage Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html#pbkdf2), it is recommended to increase the number of PBKDF2 iterations from the default of 350,000 to 600,000. While Bitwarden has recently increased the default iterations for new accounts, this change does not apply retroactively. It is possible that your account may still have the previous default of 100,000 iterations set. To ensure the security of your account, it is important to review and update the PBKDF2 iterations accordingly.
 
-To increase the PBKDF2 iterations, you can go to the key security settings page under **Account Settings → Security → Keys** on the [Bitwarden Web Vault](https://vault.bitwarden.com/) and change the value of "**KDF iterations**".
+To enhance the security of your account by increasing the PBKDF2 iterations, navigate to the encryption key settings page under **Account Settings → Security → Keys** on the [Bitwarden Web Vault](https://vault.bitwarden.com/). Here, you can adjust the "**KDF iterations**" value to your desired setting.
 
 <div class="pswp-gallery">
 {% include photoswipe_image.html url='/img/web-safety/PBKDF2-iter-settings-0.png' width='1024' height='855' thumb_width='300' alt='An image illustrating where the settings page is for security keys' %}
@@ -28,12 +31,18 @@ To increase the PBKDF2 iterations, you can go to the key security settings page 
 
 ## Automatically clearing the clipboard
 
-Clearing the clipboard after copying a password is important, here are instructions for the different apps:
+### Why should I enable it?
+
+Enabling the automatic clipboard clearing feature of a password manager is an important security measure. This feature automatically clears the clipboard after a certain period of time to prevent sensitive information, such as passwords, from being accidentally or maliciously copied and pasted into other applications. This can help to protect against common forms of cyber attacks, such as keylogging and clipboard hijacking, which can be used to steal personal information and gain unauthorized access to accounts. Additionally, it can also prevent others from viewing sensitive information on your device if it is lost or stolen. Enabling this feature can help to keep your passwords and other sensitive information secure and protect you from potential security breaches.
+
+### How do I enable it?
+
+To activate the automatic clipboard clearing feature for the various Bitwarden apps, please refer to the instructions provided for each below:
 
 <!-- no toc -->
-- [Browser Extension](#browser-extension)
-- [Desktop App (Windows)](#desktop-app-windows)
-- [Mobile App (Android)](#mobile-app-android)
+- [Bitwarden Browser Extension](#browser-extension)
+- [Bitwarden Desktop App (Windows)](#desktop-app-windows)
+- [Bitwarden Mobile App (Android)](#mobile-app-android)
 
 ### Browser Extension
 
