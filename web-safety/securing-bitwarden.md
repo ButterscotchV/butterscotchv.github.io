@@ -22,12 +22,13 @@ In light of the [recent security incident involving LastPass](https://blog.lastp
 
 ### Why should I change it?
 
-In order to align with the guidelines outlined in the [OWASP Password Storage Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html#pbkdf2), it is recommended to increase the number of PBKDF2 iterations from the default of 350,000 to 600,000. While Bitwarden has recently increased the default iterations for new accounts, this change does not apply retroactively. It is possible that your account may still have the previous default of 100,000 iterations set. To ensure the security of your account, it is important to review and update the PBKDF2 iterations accordingly.
+In order to align with the guidelines outlined in the [OWASP Password Storage Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html#pbkdf2), it is recommended to increase the number of PBKDF2 iterations to a minimum of 600,000. While Bitwarden has recently increased the default iterations for new accounts, this change does not apply retroactively. It is possible that your account may still have the previous default of 100,000 iterations or lower set if you created it before they implemented these changes. To ensure the security of your account, it is important to review and update the PBKDF2 iterations accordingly.
 
 ### How do I change it?
 
 To enhance the security of your account by increasing the PBKDF2 iterations, navigate to the encryption key settings page under **Account Settings → Security → Keys** on the [Bitwarden Web Vault](https://vault.bitwarden.com/). Here, you can adjust the "**KDF iterations**" value to either the recommended minimum value of 600,000 or your desired setting.
 
+*Click on an image to view it larger*
 <div class="pswp-gallery">
 {% include photoswipe_image.html url='/img/web-safety/PBKDF2-iter-settings-0.png' width='1024' height='855' thumb_width='300' alt='An image illustrating where the settings page is for security keys' %}
 {% include photoswipe_image.html url='/img/web-safety/PBKDF2-iter-settings-0-1.png' width='1024' height='855' thumb_width='300' alt='An image illustrating where to set the number of PBKDF2 iterations' %}
@@ -54,6 +55,7 @@ To activate the automatic clipboard clearing feature for the various Bitwarden a
 
 ### Browser Extension
 
+*Click on an image to view it larger*
 <div class="pswp-gallery">
 {% include photoswipe_image.html url='/img/web-safety/clipboard-settings-0.png' width='389' height='614' thumb_width='300' alt='An image illustrating where the settings page is for automatically clearing the clipboard on the Bitwarden browser extension' %}
 {% include photoswipe_image.html url='/img/web-safety/clipboard-settings-0-1.png' width='389' height='614' thumb_width='300' alt='An image illustrating where to change the setting for automatically clearing the clipboard on the Bitwarden browser extension' %}
@@ -61,6 +63,7 @@ To activate the automatic clipboard clearing feature for the various Bitwarden a
 
 ### Desktop App (Windows)
 
+*Click on an image to view it larger*
 <div class="pswp-gallery">
 {% include photoswipe_image.html url='/img/web-safety/clipboard-settings-1.png' width='897' height='614' thumb_width='300' alt='An image illustrating where the settings page is for automatically clearing the clipboard on the Bitwarden desktop app' %}
 {% include photoswipe_image.html url='/img/web-safety/clipboard-settings-1-1.png' width='897' height='614' thumb_width='300' alt='An image illustrating where to change the setting for automatically clearing the clipboard on the Bitwarden desktop app' %}
@@ -68,6 +71,7 @@ To activate the automatic clipboard clearing feature for the various Bitwarden a
 
 ### Mobile App (Android)
 
+*Click on an image to view it larger*
 <div class="pswp-gallery">
 {% include photoswipe_image.html url='/img/web-safety/clipboard-settings-2.png' width='1080' height='2340' thumb_width='300' alt='An image illustrating where the settings page is for automatically clearing the clipboard on the Bitwarden mobile app' %}
 {% include photoswipe_image.html url='/img/web-safety/clipboard-settings-2-1.png' width='1080' height='2340' thumb_width='300' alt='An image illustrating where to change the setting for automatically clearing the clipboard on the Bitwarden mobile app' %}
