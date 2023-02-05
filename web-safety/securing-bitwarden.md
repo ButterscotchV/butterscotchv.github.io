@@ -83,3 +83,4 @@ To activate the automatic clipboard clearing feature for the various Bitwarden a
 - <https://community.bitwarden.com/t/increasing-the-default-number-of-pbkdf2-for-existing-accounts/49550>
 - <https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html#pbkdf2>
 - <https://github.com/bitwarden/server/issues/589>
+- <https://www.ghacks.net/2023/01/31/bitwarden-to-increase-its-server-side-iterations-to-600000-heres-how-to-set-it-manually/>
