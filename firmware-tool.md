@@ -10,6 +10,8 @@ image: /img/avatar.png
 description: "Links to the SlimeVR Firmware Tool and fork(s)"
 ---
 
+# SlimeVR Firmware Tool {#slimevr-firmware-tool}
+
 Hello! You can find my version of the SlimeVR firmware tool at the link below:
 
 <https://slimevr-firmware.bscotch.ca/>
