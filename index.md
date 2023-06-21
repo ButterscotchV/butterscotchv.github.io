@@ -14,5 +14,5 @@ Welcome to my homepage, I'm Butterscotch! This website serves as a central hub f
 You can find me at:
 
 * My GitHub profile at <https://github.com/ButterscotchV>
-* Discord as `Butterscotch!#0226`
+* Discord as `butterscotch.v`
 * The SlimeVR Discord server at <https://discord.gg/slimevr>
