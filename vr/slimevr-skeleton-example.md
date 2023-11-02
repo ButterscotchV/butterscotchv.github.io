@@ -1,6 +1,6 @@
 ---
 layout: page
-title: SlimeVR skeleton example
+title: SlimeVR Skeleton Example
 
 parent: VR
 
@@ -12,7 +12,7 @@ image: /img/avatar.png
 description: "An example of how SlimeVR uses tracker rotations"
 ---
 
-# SlimeVR skeleton example {#slimevr-skeleton-example}
+# SlimeVR Skeleton Example {#slimevr-skeleton-example}
 
 ## Introduction {#introduction}
 

@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Removing old trackers entries from SteamVR
+title: Removing Old Trackers Entries From SteamVR
 
 parent: VR
 
@@ -14,7 +14,7 @@ description: "How to remove old trackers from the SteamVR config"
 redirect_from: /steamvr/remove_old_trackers
 ---
 
-# Removing old trackers entries from SteamVR {#removing-old-trackers-entries-from-steamvr}
+# Removing Old Trackers Entries From SteamVR {#removing-old-trackers-entries-from-steamvr}
 
 You can find the list of trackers at the bottom of the SteamVR config file `steamvr.vrsettings` in the SteamVR config folder (which can generally be found at `C:\Program Files (x86)\Steam\config\steamvr.vrsettings`).
 
