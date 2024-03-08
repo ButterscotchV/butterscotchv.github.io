@@ -51,7 +51,7 @@ async function sha256(file) {
 }
 
 const driverVersionMap = {
-  '993b5680f80319cc92f57fca057be8fee3dc73e500891fbd99bee292861975ee': 'v0.2.2',
+  '993b5680f80319cc92f57fca057be8fee3dc73e500891fbd99bee292861975ee': 'v0.2.2 (latest)',
   '6bdd2fdf4a52a008dd5c27639f52a9cb32126d2e945f34c4757ae281957e529e': 'v0.2.1',
   '29890c5512d4648a70cb666528ad558acab0aea064c26eabe8658a5f6b78e956': 'v0.2.0',
   'd3cb0d1b55fecb873fcce9922a84bfb0297b5c9ce5a6df495ea997f1f86e4139': 'v0.1.1',
