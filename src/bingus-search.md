@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: layouts/page.njk
 title: Bingus Search
 
 nav_order: 2

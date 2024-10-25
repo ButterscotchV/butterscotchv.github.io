@@ -1,0 +1,63 @@
+name: GitHub Pages
+
+on:
+    push:
+        branches:
+            - main
+    pull_request:
+    workflow_dispatch:
+
+jobs:
+    build:
+        name: Build website
+        runs-on: ubuntu-latest
+
+        concurrency:
+            group: ${{ github.workflow }}-${{ github.ref }}-build
+
+        steps:
+            - uses: actions/checkout@v4
+
+            - name: Setup Node
+              uses: actions/setup-node@v4
+              with:
+                  cache: "npm"
+                  node-version: "lts"
+
+            - name: Cache Eleventy .cache
+              uses: actions/cache@v4
+              with:
+                  path: ./.cache
+                  key: ${{ runner.os }}-eleventy-fetch-cache
+
+            - run: npm ci
+            - run: npm run build
+
+            - name: Upload artifact
+              uses: actions/upload-pages-artifact@v3
+              if: github.ref == 'refs/heads/main'
+              with:
+                  path: ./_site
+
+    deploy:
+        if: github.ref == 'refs/heads/main'
+
+        name: Deploy website to GitHub Pages
+        needs: build
+        runs-on: ubuntu-latest
+
+        concurrency:
+            group: ${{ github.workflow }}-${{ github.ref }}-deploy
+
+        permissions:
+            contents: write
+            id-token: write
+
+        environment:
+            name: github-pages
+            url: ${{ steps.deployment.outputs.page_url }}
+
+        steps:
+            - name: Deploy to GitHub Pages
+              uses: actions/deploy-pages@v4
+              id: deployment

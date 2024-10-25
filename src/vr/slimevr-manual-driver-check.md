@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: layouts/page.njk
 title: SlimeVR Manual Driver Validation
 
 parent: VR
@@ -12,7 +12,7 @@ image: /img/avatar.png
 description: "A short guide to validating your SteamVR driver installation for SlimeVR"
 ---
 
-# SlimeVR Manual Driver Validation {#slimevr-manual-driver-validation}
+# SlimeVR Manual Driver Validation
 
 <style>
 .file-drop {
@@ -32,7 +32,7 @@ description: "A short guide to validating your SteamVR driver installation for S
 }
 </style>
 
-## Verify {#verify}
+## Verify
 
 If you aren't sure whether you have the latest driver version, you can check easily. If you go to `C:\Program Files (x86)\Steam\steamapps\common\SteamVR\drivers\slimevr\bin\win64\`, you should find `driver_slimevr.dll`.
 
@@ -76,11 +76,11 @@ fileInput.addEventListener('change', async (event) => {
 });
 </script>
 
-## Automatically install {#automatically-install}
+## Automatically install
 
 To install the driver automatically, you can just use the SlimeVR installer, which you can find at <https://slimevr.dev/download>.
 
-## Manually install {#manually-install}
+## Manually install
 
 1. Download the latest SteamVR driver release for Windows (`slimevr-openvr-driver-win64.zip`) at <https://github.com/SlimeVR/SlimeVR-OpenVR-Driver/releases/latest>.
 2. Copy the `slimevr` folder from `slimevr-openvr-driver-win64.zip` to `C:\Program Files (x86)\Steam\steamapps\common\SteamVR\drivers\` and overwrite all if necessary.

@@ -1,0 +1,8 @@
+{% js %}{% include "src/_includes/photoswipe-init.js" %}{% endjs %}
+{% css %}{% include "node_modules/photoswipe/dist/photoswipe.css" %}{% endcss %}
+
+{% macro image(url, width, height, thumb_width, thumb_url="", alt="") %}
+<a class="no-decoration" href="{{ url }}" data-pswp-width="{{ width }}" data-pswp-height="{{ height }}" target="_blank">
+    <img class="image" src="{% if thumb_url %}{{ thumb_url }}{% else %}{{ url }}{% endif %}"{% if thumb_width %} width="{{ thumb_width }}"{% endif %}{% if alt %} alt="{{ alt }}"{% endif %}/>
+</a>
+{% endmacro %}

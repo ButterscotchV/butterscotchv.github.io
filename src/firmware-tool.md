@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: layouts/page.njk
 title: SlimeVR Firmware Tool
 
 has_children: false

@@ -1,6 +1,0 @@
-<a class="no-decoration" href="{{ include.url | relative_url }}" data-pswp-width="{{ include.width }}"
-  data-pswp-height="{{ include.height }}" target="_blank">
-  <img class="image"
-    src="{% if include.thumb_url != nil %} {{ include.thumb_url | relative_url }} {% else %} {{ include.url | relative_url }} {% endif %}"
-    width="{{ include.thumb_width }}" alt="{{ include.alt }}" />
-</a>
