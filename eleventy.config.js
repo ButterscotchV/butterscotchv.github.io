@@ -19,8 +19,8 @@ export default async function (eleventyConfig) {
             "./public/": "/"
         })
         .addPassthroughCopy({
-            "node_modules/photoswipe/dist/photoswipe-lightbox.esm.js": "assets/js/photoswipe-lightbox.esm.js",
-            "node_modules/photoswipe/dist/photoswipe.esm.js": "assets/js/photoswipe.esm.js"
+            "node_modules/photoswipe/dist/photoswipe-lightbox.esm.js": "assets/ps/photoswipe-lightbox.esm.js",
+            "node_modules/photoswipe/dist/photoswipe.esm.js": "assets/ps/photoswipe.esm.js"
         });
 
     // Run Eleventy when these files change:
@@ -31,9 +31,13 @@ export default async function (eleventyConfig) {
 
     // Per-page bundles, see https://github.com/11ty/eleventy-plugin-bundle
     // Adds the {% css %} paired shortcode
-    eleventyConfig.addBundle("css");
+    eleventyConfig.addBundle("css", {
+        toFileDirectory: "assets",
+    });
     // Adds the {% js %} paired shortcode
-    eleventyConfig.addBundle("js");
+    eleventyConfig.addBundle("js", {
+        toFileDirectory: "assets",
+    });
 
     // Official plugins
     eleventyConfig.addPlugin(pluginSyntaxHighlight, {
