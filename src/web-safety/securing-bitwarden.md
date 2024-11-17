@@ -32,7 +32,6 @@ In order to align with the guidelines outlined in the [OWASP Password Storage Ch
 
 To enhance the security of your account by increasing the PBKDF2 iterations, navigate to the encryption key settings page under **Account Settings → Security → Keys** on the [Bitwarden Web Vault](https://vault.bitwarden.com/). Here, you can adjust the "**KDF iterations**" value to either the recommended minimum value of 600,000 or your desired setting.
 
-*Click on an image to view it larger*
 <div class="pswp-gallery">
 {{ ps.image(url='/img/web-safety/PBKDF2-iter-settings-0.png', width='1024', height='855', thumb_width='300', alt='An image illustrating where the settings page is for security keys') }}
 {{ ps.image(url='/img/web-safety/PBKDF2-iter-settings-0-1.png', width='1024', height='855', thumb_width='300', alt='An image illustrating where to set the number of PBKDF2 iterations') }}
@@ -59,7 +58,6 @@ To activate the automatic clipboard clearing feature for the various Bitwarden a
 
 ### Browser Extension
 
-*Click on an image to view it larger*
 <div class="pswp-gallery">
 {{ ps.image(url='/img/web-safety/clipboard-settings-0.png', width='389', height='614', thumb_width='300', alt='An image illustrating where the settings page is for automatically clearing the clipboard on the Bitwarden browser extension') }}
 {{ ps.image(url='/img/web-safety/clipboard-settings-0-1.png', width='389', height='614', thumb_width='300', alt='An image illustrating where to change the setting for automatically clearing the clipboard on the Bitwarden browser extension') }}
@@ -67,7 +65,6 @@ To activate the automatic clipboard clearing feature for the various Bitwarden a
 
 ### Desktop App (Windows)
 
-*Click on an image to view it larger*
 <div class="pswp-gallery">
 {{ ps.image(url='/img/web-safety/clipboard-settings-1.png', width='897', height='614', thumb_width='300', alt='An image illustrating where the settings page is for automatically clearing the clipboard on the Bitwarden desktop app') }}
 {{ ps.image(url='/img/web-safety/clipboard-settings-1-1.png', width='897', height='614', thumb_width='300', alt='An image illustrating where to change the setting for automatically clearing the clipboard on the Bitwarden desktop app') }}
@@ -75,7 +72,6 @@ To activate the automatic clipboard clearing feature for the various Bitwarden a
 
 ### Mobile App (Android)
 
-*Click on an image to view it larger*
 <div class="pswp-gallery">
 {{ ps.image(url='/img/web-safety/clipboard-settings-2.png', width='1080', height='2340', thumb_width='300', alt='An image illustrating where the settings page is for automatically clearing the clipboard on the Bitwarden mobile app') }}
 {{ ps.image(url='/img/web-safety/clipboard-settings-2-1.png', width='1080', height='2340', thumb_width='300', alt='An image illustrating where to change the setting for automatically clearing the clipboard on the Bitwarden mobile app') }}
