@@ -5,13 +5,6 @@ import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default async function (eleventyConfig) {
-    // Drafts, see also _data/eleventyDataSchema.js
-    eleventyConfig.addPreprocessor("drafts", "*", (data, content) => {
-        if (data.draft && process.env.ELEVENTY_RUN_MODE === "build") {
-            return false;
-        }
-    });
-
     // Copy the contents of the `public` folder to the output folder
     // For example, `./public/css/` ends up in `_site/css/`
     eleventyConfig
@@ -79,6 +72,11 @@ export default async function (eleventyConfig) {
 
     eleventyConfig.addShortcode("currentBuildDate", () => {
         return (new Date()).toISOString();
+    });
+
+    eleventyConfig.addShortcode("getStyleBundle", function getContent(type, bucket, explicitUrl) {
+        const bundle = eleventyConfig.getShortcode("getBundle")?.(type, bucket, explicitUrl || this.page?.url);
+        return bundle ? `<style>${bundle}</style>` : "";
     });
 
     // Features to make your build faster (when you need them)
