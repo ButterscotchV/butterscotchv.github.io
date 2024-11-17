@@ -15,8 +15,10 @@
             <a href="/">{{ metadata.title }}</a>
         </header>
 
-        <main>
-            {{ content | safe }}
+        <main class="section">
+            <div class="content">
+                {{ content | safe }}
+            </div>
         </main>
 
         <script type="module">{% getBundle "js" %}</script>
