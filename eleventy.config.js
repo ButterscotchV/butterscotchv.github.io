@@ -2,6 +2,7 @@ import { IdAttributePlugin, InputPathToUrlTransformPlugin, HtmlBasePlugin } from
 import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import pluginNavigation from "@11ty/eleventy-navigation";
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
+import htmlmin from "html-minifier-terser";
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default async function (eleventyConfig) {
@@ -77,6 +78,21 @@ export default async function (eleventyConfig) {
     eleventyConfig.addShortcode("getStyleBundle", function getContent(type, bucket, explicitUrl) {
         const bundle = eleventyConfig.getShortcode("getBundle")?.(type, bucket, explicitUrl || this.page?.url);
         return bundle ? `<style>${bundle}</style>` : "";
+    });
+
+    eleventyConfig.addTransform("htmlmin", function (content) {
+        if ((this.page.outputPath || "").endsWith(".html")) {
+            let minified = htmlmin.minify(content, {
+                useShortDoctype: true,
+                removeComments: true,
+                collapseWhitespace: true,
+            });
+
+            return minified;
+        }
+
+        // If not an HTML output, return content as-is
+        return content;
     });
 
     // Features to make your build faster (when you need them)
