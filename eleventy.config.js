@@ -19,9 +19,11 @@ export default async function (eleventyConfig) {
             "./public/": "/"
         })
         .addPassthroughCopy({
-            "node_modules/photoswipe/dist/photoswipe-lightbox.esm.min.js": "assets/ps/photoswipe-lightbox.esm.js",
-            "node_modules/photoswipe/dist/photoswipe.esm.min.js": "assets/ps/photoswipe.esm.js",
-            "node_modules/photoswipe/dist/photoswipe.css": "assets/ps/photoswipe.css",
+            "./node_modules/photoswipe/dist/photoswipe-lightbox.esm.min.js": "/assets/ps/photoswipe-lightbox.esm.min.js",
+            "./node_modules/photoswipe/dist/photoswipe.esm.min.js": "/assets/ps/photoswipe.esm.min.js",
+            "./node_modules/photoswipe/dist/photoswipe.css": "/assets/ps/photoswipe.css",
+        }).addPassthroughCopy({
+            "./node_modules/bulma/css/bulma.min.css": "/assets/bulma/bulma.min.css",
         });
 
     // Run Eleventy when these files change:
