@@ -2,10 +2,10 @@
 layout: layouts/page.njk
 title: Home
 
-has_children: false
-has_toc: true
+eleventyNavigation:
+  key: Home
+  order: 0
 
-nav_order: 0
 image: /img/avatar.png
 ---
 

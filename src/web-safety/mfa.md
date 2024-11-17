@@ -2,12 +2,11 @@
 layout: layouts/page.njk
 title: Multi-Factor Authentication (MFA)
 
-parent: Web Safety
+eleventyNavigation:
+  key: Multi-Factor Authentication (MFA)
+  parent: Web Safety
+  order: 0
 
-has_children: false
-has_toc: false
-
-nav_order: 0
 image: /img/lock_icon.png
 description: "A guide to setting up multi-factor authentication (MFA)"
 ---

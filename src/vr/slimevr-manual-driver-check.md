@@ -2,12 +2,11 @@
 layout: layouts/page.njk
 title: SlimeVR Manual Driver Validation
 
-parent: VR
+eleventyNavigation:
+  key: SlimeVR Manual Driver Validation
+  parent: VR
+  order: 3
 
-has_children: false
-has_toc: false
-
-nav_order: 5
 image: /img/avatar.png
 description: "A short guide to validating your SteamVR driver installation for SlimeVR"
 ---

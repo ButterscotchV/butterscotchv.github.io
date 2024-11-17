@@ -2,7 +2,10 @@
 layout: layouts/page.njk
 title: Bingus Search
 
-nav_order: 2
+eleventyNavigation:
+  key: Bingus Search
+  order: 2
+
 image: /img/avatar.png
 description: "Bingus Search"
 

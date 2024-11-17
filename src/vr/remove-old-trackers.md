@@ -2,12 +2,11 @@
 layout: layouts/page.njk
 title: Removing Old Trackers Entries From SteamVR
 
-parent: VR
+eleventyNavigation:
+  key: Removing Old Trackers Entries From SteamVR
+  parent: VR
+  order: 0
 
-has_children: false
-has_toc: false
-
-nav_order: 0
 image: /img/avatar.png
 description: "How to remove old trackers from the SteamVR config"
 ---

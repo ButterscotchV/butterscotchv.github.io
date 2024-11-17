@@ -2,12 +2,11 @@
 layout: layouts/page.njk
 title: How to make Bitwarden more secure
 
-parent: Web Safety
+eleventyNavigation:
+  key: How to make Bitwarden more secure
+  parent: Web Safety
+  order: 1
 
-has_children: false
-has_toc: false
-
-nav_order: 1
 image: /img/lock_icon.png
 description: "A guide to making Bitwarden more secure"
 ---

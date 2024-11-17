@@ -2,12 +2,11 @@
 layout: layouts/page.njk
 title: SlimeVR Skeleton Example
 
-parent: VR
+eleventyNavigation:
+  key: SlimeVR Skeleton Example
+  parent: VR
+  order: 1
 
-has_children: false
-has_toc: false
-
-nav_order: 1
 image: /img/avatar.png
 description: "An example of how SlimeVR uses tracker rotations"
 ---

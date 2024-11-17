@@ -12,12 +12,25 @@
     </head>
     <body>
         <header>
-            <a href="/">{{ metadata.title }}</a>
+            <nav class="navbar is-primary has-shadow">
+                <div class="navbar-brand">
+                        <a class="navbar-item title is-3" href="/">{{ metadata.title }}</a>
+                    </div>
+            </nav>
         </header>
 
-        <main class="section">
-            <div class="content">
-                {{ content | safe }}
+        <main class="columns">
+            <div class="column is-2">
+                <aside class="content py-4">
+                    {{ collections.all | eleventyNavigation | eleventyNavigationToHtml | safe }}
+                </aside>
+            </div>
+            <div class="column">
+                <div class="section">
+                    <div class="container content">
+                        {{ content | safe }}
+                    </div>
+                </div>
             </div>
         </main>
 
