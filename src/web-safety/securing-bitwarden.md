@@ -31,9 +31,9 @@ In order to align with the guidelines outlined in the [OWASP Password Storage Ch
 
 To enhance the security of your account by increasing the PBKDF2 iterations, navigate to the encryption key settings page under **Account Settings → Security → Keys** on the [Bitwarden Web Vault](https://vault.bitwarden.com/). Here, you can adjust the "**KDF iterations**" value to either the recommended minimum value of 600,000 or your desired setting.
 
-<div class="pswp-gallery">
-{{ ps.image(url='/img/web-safety/PBKDF2-iter-settings-0.png', width='1024', height='855', thumb_width='300', alt='An image illustrating where the settings page is for security keys') }}
-{{ ps.image(url='/img/web-safety/PBKDF2-iter-settings-0-1.png', width='1024', height='855', thumb_width='300', alt='An image illustrating where to set the number of PBKDF2 iterations') }}
+<div class="pswp-gallery is-flex is-gap-1">
+{{ ps.image(url='/img/web-safety/PBKDF2-iter-settings-0.png', width='1024', height='855', thumb_width='500', alt='An image illustrating where the settings page is for security keys') }}
+{{ ps.image(url='/img/web-safety/PBKDF2-iter-settings-0-1.png', width='1024', height='855', thumb_width='500', alt='An image illustrating where to set the number of PBKDF2 iterations') }}
 </div>
 
 ## Automatically clearing the clipboard
@@ -57,23 +57,23 @@ To activate the automatic clipboard clearing feature for the various Bitwarden a
 
 ### Browser Extension
 
-<div class="pswp-gallery">
+<div class="pswp-gallery is-flex is-gap-1">
 {{ ps.image(url='/img/web-safety/clipboard-settings-0.png', width='389', height='614', thumb_width='300', alt='An image illustrating where the settings page is for automatically clearing the clipboard on the Bitwarden browser extension') }}
 {{ ps.image(url='/img/web-safety/clipboard-settings-0-1.png', width='389', height='614', thumb_width='300', alt='An image illustrating where to change the setting for automatically clearing the clipboard on the Bitwarden browser extension') }}
 </div>
 
 ### Desktop App (Windows)
 
-<div class="pswp-gallery">
-{{ ps.image(url='/img/web-safety/clipboard-settings-1.png', width='897', height='614', thumb_width='300', alt='An image illustrating where the settings page is for automatically clearing the clipboard on the Bitwarden desktop app') }}
-{{ ps.image(url='/img/web-safety/clipboard-settings-1-1.png', width='897', height='614', thumb_width='300', alt='An image illustrating where to change the setting for automatically clearing the clipboard on the Bitwarden desktop app') }}
+<div class="pswp-gallery is-flex is-gap-1">
+{{ ps.image(url='/img/web-safety/clipboard-settings-1.png', width='897', height='614', thumb_width='500', alt='An image illustrating where the settings page is for automatically clearing the clipboard on the Bitwarden desktop app') }}
+{{ ps.image(url='/img/web-safety/clipboard-settings-1-1.png', width='897', height='614', thumb_width='500', alt='An image illustrating where to change the setting for automatically clearing the clipboard on the Bitwarden desktop app') }}
 </div>
 
 ### Mobile App (Android)
 
-<div class="pswp-gallery">
-{{ ps.image(url='/img/web-safety/clipboard-settings-2.png', width='1080', height='2340', thumb_width='300', alt='An image illustrating where the settings page is for automatically clearing the clipboard on the Bitwarden mobile app') }}
-{{ ps.image(url='/img/web-safety/clipboard-settings-2-1.png', width='1080', height='2340', thumb_width='300', alt='An image illustrating where to change the setting for automatically clearing the clipboard on the Bitwarden mobile app') }}
+<div class="pswp-gallery is-flex is-gap-1">
+{{ ps.image(url='/img/web-safety/clipboard-settings-2.png', width='1080', height='2340', thumb_width='250', alt='An image illustrating where the settings page is for automatically clearing the clipboard on the Bitwarden mobile app') }}
+{{ ps.image(url='/img/web-safety/clipboard-settings-2-1.png', width='1080', height='2340', thumb_width='250', alt='An image illustrating where to change the setting for automatically clearing the clipboard on the Bitwarden mobile app') }}
 </div>
 
 ## See Also
