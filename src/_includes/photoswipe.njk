@@ -1,0 +1,8 @@
+{% html "head" %}<link rel="stylesheet" href="/assets/ps/photoswipe.css"/>{% endhtml %}
+{% js "module" %}{% include "src/_includes/photoswipe-init.js" %}{% endjs %}
+
+{% macro image(url, width, height, thumb_width, thumb_url="", alt="") %}
+<a href="{{ url }}" data-pswp-width="{{ width }}" data-pswp-height="{{ height }}" target="_blank">
+    <img src="{% if thumb_url %}{{ thumb_url }}{% else %}{{ url }}{% endif %}"{% if thumb_width %} eleventy:widths="{{ thumb_width }}"{% endif %}{% if alt %} alt="{{ alt }}"{% endif %}/>
+</a>
+{% endmacro %}

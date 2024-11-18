@@ -1,0 +1,19 @@
+{% macro navLink(navPage) %}
+    <a href="{{ navPage.url }}"{% if navPage.url == page.url %} class="is-active"{% endif %}>{{ navPage.title }}</a>
+    {{ navList(navPage.children) }}
+{% endmacro %}
+
+{% macro navList(navPages) %}
+    {% if navPages | length %}
+        <ul class="menu-list">
+            {% for navPage in navPages %}
+                <li>{{ navLink(navPage) }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+{% endmacro %}
+
+<aside class="menu">
+    {{ navList(collections.all | eleventyNavigation) }}
+    <hr class="divider is-hidden-desktop" />
+</aside>

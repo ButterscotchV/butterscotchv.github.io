@@ -1,0 +1,17 @@
+.break-word {
+    word-break: break-word;
+}
+
+@media screen and (max-width: 1023px) {
+    .section.p-0-touch {
+        padding: 0;
+    }
+
+    .container.is-fluid.p-0-touch {
+        padding: 0;
+    }
+
+    .mt-5-touch {
+        margin-top: 1.5rem !important;
+    }
+}
