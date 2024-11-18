@@ -11,7 +11,7 @@ image: /img/avatar.png
 description: "A short guide to validating your SteamVR driver installation for SlimeVR"
 ---
 
-# SlimeVR Manual Driver Validation
+# {{ title }}
 
 <style>
 .file-drop {

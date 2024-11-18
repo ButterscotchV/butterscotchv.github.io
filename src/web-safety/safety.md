@@ -10,7 +10,7 @@ image: /img/lock_icon.png
 description: "A guide to being safer with your passwords and accounts"
 ---
 
-# Web Safety
+# {{ title }}
 
 ## Introduction
 

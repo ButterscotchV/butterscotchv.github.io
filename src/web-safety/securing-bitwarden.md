@@ -13,7 +13,7 @@ description: "A guide to making Bitwarden more secure"
 {% include "photoswipe.njk" %}
 {% import "photoswipe.njk" as ps %}
 
-# How to make Bitwarden more secure
+# {{ title }}
 
 ## Introduction
 

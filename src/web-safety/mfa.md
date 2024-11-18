@@ -11,7 +11,7 @@ image: /img/lock_icon.png
 description: "A guide to setting up multi-factor authentication (MFA)"
 ---
 
-# Multi-Factor Authentication (MFA)
+# {{ title }}
 
 ## Multi-factor authentication (MFA) introduction
 

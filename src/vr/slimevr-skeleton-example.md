@@ -13,7 +13,7 @@ description: "An example of how SlimeVR uses tracker rotations"
 {% include "photoswipe.njk" %}
 {% import "photoswipe.njk" as ps %}
 
-# SlimeVR Skeleton Example
+# {{ title }}
 
 ## Introduction
 
