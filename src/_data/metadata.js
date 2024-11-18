@@ -7,5 +7,6 @@ export default {
         name: "Butterscotch!",
         url: "https://bscotch.ca/"
     },
-    image: "/img/avatar.png"
+    image: "/img/avatar.png",
+    manifest: "/site.webmanifest"
 }

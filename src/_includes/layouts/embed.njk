@@ -1,7 +1,7 @@
 <meta property="og:locale" content="en_US">
 
-<link rel="canonical" href="{{ page.url | url }}">
-<meta property="og:url" content="{{ page.url | url }}">
+<link rel="canonical" href="{{ page.url | htmlBaseUrl(metadata.url) }}">
+<meta property="og:url" content="{{ page.url | htmlBaseUrl(metadata.url) }}">
 
 <meta property="og:site_name" content="{{ metadata.title }}">
 
@@ -11,8 +11,8 @@
 <meta name="description" content="{{ description or metadata.description }}">
 <meta property="og:description" content="{{ description or metadata.description }}">
 
-<meta property="og:image" content="{{ image or metadata.image | url }}">
-<meta property="twitter:image" content="{{ image or metadata.image | url }}">
+<meta property="og:image" content="{{ image or metadata.image }}">
+<meta property="twitter:image" content="{{ image or metadata.image }}">
 
 <meta property="og:type" content="website">
 <meta name="twitter:card" content="summary">
@@ -21,4 +21,4 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 
-<link rel="manifest" href="/site.webmanifest">
+<link rel="manifest" href="{{ manifest or metadata.manifest }}">
