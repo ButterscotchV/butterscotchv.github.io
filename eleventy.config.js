@@ -11,8 +11,9 @@ export default async function (eleventyConfig) {
     eleventyConfig
         .addPassthroughCopy({
             "./public/": "/"
-        })
-        .addPassthroughCopy({
+        }).addPassthroughCopy({
+            "./src/img/": "/img/"
+        }).addPassthroughCopy({
             "./node_modules/photoswipe/dist/photoswipe-lightbox.esm.min.js": "/assets/ps/photoswipe-lightbox.esm.min.js",
             "./node_modules/photoswipe/dist/photoswipe.esm.min.js": "/assets/ps/photoswipe.esm.min.js",
             "./node_modules/photoswipe/dist/photoswipe.css": "/assets/ps/photoswipe.css",
