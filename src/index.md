@@ -9,10 +9,12 @@ eleventyNavigation:
 image: /img/avatar.png
 ---
 
+# {{ title }}
+
 Welcome to my homepage, I'm Butterscotch!
 
 You can find me at:
 
-* My GitHub profile at <https://github.com/ButterscotchV>
-* Discord as `butterscotch.v`
-* The SlimeVR Discord server at <https://discord.gg/slimevr>
+* [Bluesky (18+)](https://bsky.app/profile/butterscotchv.bsky.social)
+* [GitHub](https://github.com/ButterscotchV)
+* [SlimeVR Discord](https://discord.gg/slimevr) as `butterscotch.v`

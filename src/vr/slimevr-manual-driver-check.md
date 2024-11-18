@@ -15,13 +15,10 @@ description: "A short guide to validating your SteamVR driver installation for S
 
 <style>
 .file-drop {
-  display: flex;
   align-items: center;
   justify-content: center;
-  width: fit-content;
-  height: fit-content;
-  min-width: 300px;
-  min-height: 80px;
+  width: 100%;
+  min-height: 100px;
   padding: 5px;
   border: 5px dashed #666;
 }
