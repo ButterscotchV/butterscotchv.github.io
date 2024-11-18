@@ -1,57 +1,42 @@
+{% css %}{% include "src/_includes/page.css" %}{% endcss %}
 <!doctype html>
 <html lang="{{ metadata.language }}">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>{{ title or metadata.title }}</title>
-        <meta name="description" content="{{ description or metadata.description }}">
+
+        {% include "src/_includes/layouts/embed.njk" %}
 
         {% getBundle "html", "head" %}
         {% getStyleBundle "css" %}
+
         <link rel="stylesheet" href="/assets/bulma/bulma.min.css"/>
         <link rel="stylesheet" href="/assets/prism/prism-tomorrow.min.css"/>
     </head>
     <body>
         <header>
-            <nav class="navbar is-primary has-shadow px-5">
-                <div class="navbar-brand">
-                    <a class="navbar-item title" href="/">{{ metadata.title }}</a>
-                </div>
-            </nav>
+            {% include "src/_includes/layouts/nav.njk" %}
         </header>
 
-        <main class="container is-fluid section">
-            <div class="columns is-gapless">
-                <div class="column is-2-fullhd is-3 is-4-tablet mb-6">
-                    <aside class="menu">
-                        <ul class="menu-list">
-                            {% macro navLink(navPage) %}<a href="{{ navPage.url }}" {% if navPage.url == page.url %}class="is-active"{% endif %}>{{ navPage.title }}</a>{% endmacro %}
-                            {% set navPages = collections.all | eleventyNavigation %}
-                            {% for navPage in navPages %}
-                                <li>
-                                    {{ navLink(navPage) }}
-                                    {% if navPage.children | length %}
-                                    <ul>
-                                        {% for navChild in navPage.children %}
-                                        <li>{{ navLink(navChild) }}</li>
-                                        {% endfor %}
-                                    </ul>
-                                    {% endif %}
-                                </li>
-                            {% endfor %}
-                        </ul>
-                    </aside>
-                </div>
-                <div class="column is-9-fullhd">
-                    <div class="section py-0">
-                        <div class="content">
-                            {{ content | safe }}
+        <main class="container is-fluid p-0-touch break-word">
+            <div class="section p-0-touch">
+                <div class="columns is-gapless is-desktop">
+                    <div id="sidebar-menu" class="column is-2-fullhd is-3-widescreen is-3-desktop is-hidden-touch">
+                        {% include "src/_includes/layouts/sidebar.njk" %}
+                    </div>
+                    <div class="column is-8-fullhd is-8-widescreen is-8-desktop mt-5-touch">
+                        <div class="section py-0">
+                            <div class="content">
+                                {{ content | safe }}
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </main>
 
-        <script type="module">{% getBundle "js" %}</script>
+        <script>{% getBundle "js" %}</script>
+        <script type="module">{% getBundle "js", "module" %}</script>
     </body>
 </html>

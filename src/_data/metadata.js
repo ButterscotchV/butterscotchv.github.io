@@ -6,5 +6,6 @@ export default {
     author: {
         name: "Butterscotch!",
         url: "https://bscotch.ca/"
-    }
+    },
+    image: "/img/avatar.png"
 }

@@ -1,5 +1,5 @@
 {% html "head" %}<link rel="stylesheet" href="/assets/ps/photoswipe.css"/>{% endhtml %}
-{% js %}{% include "src/_includes/photoswipe-init.js" %}{% endjs %}
+{% js "module" %}{% include "src/_includes/photoswipe-init.js" %}{% endjs %}
 
 {% macro image(url, width, height, thumb_width, thumb_url="", alt="") %}
 <a href="{{ url }}" data-pswp-width="{{ width }}" data-pswp-height="{{ height }}" target="_blank">
