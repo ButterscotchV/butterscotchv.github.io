@@ -18,6 +18,8 @@ export default async function (eleventyConfig) {
             "./node_modules/photoswipe/dist/photoswipe.css": "/assets/ps/photoswipe.css",
         }).addPassthroughCopy({
             "./node_modules/bulma/css/bulma.min.css": "/assets/bulma/bulma.min.css",
+        }).addPassthroughCopy({
+            "./node_modules/prismjs/themes/prism-tomorrow.min.css": "/assets/prism/prism-tomorrow.min.css",
         });
 
     // Run Eleventy when these files change:
