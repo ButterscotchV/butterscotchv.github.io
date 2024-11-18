@@ -12,23 +12,40 @@
     </head>
     <body>
         <header>
-            <nav class="navbar is-primary has-shadow">
+            <nav class="navbar is-primary has-shadow px-5">
                 <div class="navbar-brand">
-                        <a class="navbar-item title is-3" href="/">{{ metadata.title }}</a>
-                    </div>
+                    <a class="navbar-item title" href="/">{{ metadata.title }}</a>
+                </div>
             </nav>
         </header>
 
-        <main class="columns">
-            <div class="column is-2">
-                <aside class="content py-4">
-                    {{ collections.all | eleventyNavigation | eleventyNavigationToHtml | safe }}
-                </aside>
-            </div>
-            <div class="column">
-                <div class="section">
-                    <div class="container content">
-                        {{ content | safe }}
+        <main class="container is-fluid">
+            <div class="columns is-gapless">
+                <div class="column is-2-fullhd is-3 is-4-tablet">
+                    <aside class="menu p-2">
+                        <ul class="menu-list">
+                            {% macro navLink(navPage) %}<a href="{{ navPage.url }}" {% if navPage.url == page.url %}class="is-active"{% endif %}>{{ navPage.title }}</a>{% endmacro %}
+                            {% set navPages = collections.all | eleventyNavigation %}
+                            {% for navPage in navPages %}
+                                <li>
+                                    {{ navLink(navPage) }}
+                                    {% if navPage.children | length %}
+                                    <ul>
+                                        {% for navChild in navPage.children %}
+                                        <li>{{ navLink(navChild) }}</li>
+                                        {% endfor %}
+                                    </ul>
+                                    {% endif %}
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    </aside>
+                </div>
+                <div class="column is-9-fullhd">
+                    <div class="section">
+                        <div class="content">
+                            {{ content | safe }}
+                        </div>
                     </div>
                 </div>
             </div>
