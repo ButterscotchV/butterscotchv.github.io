@@ -7,8 +7,6 @@ $beige-light: #d1cdcd;
 $beige-lighter: #eff0eb;
 
 @use "bulma/sass/utilities" with (
-    $grey-dark: $brown,
-    $grey-light: $beige-light,
     $primary: $purple,
     $link: $pink,
     $control-border-width: 2px,
