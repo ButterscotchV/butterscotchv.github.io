@@ -35,8 +35,8 @@ The images below illustrate wearing two physical trackers, a chest tracker mount
 _Note: The input does not include the skeleton, the outline is purely for illustrative purposes._
 
 <div class="pswp-gallery is-flex is-gap-1">
-{{ ps.image(url='/img/vr/slime-skeleton-0.png', width='327', height='544', thumb_width='300', alt='An image of Amber wearing SlimeVR trackers, side view') }}
-{{ ps.image(url='/img/vr/slime-skeleton-0-1.png', width='327', height='544', thumb_width='300', alt='An image of Amber wearing SlimeVR trackers, angled view') }}
+{{ ps.image(url='/img/vr/slime-skeleton-0.png', width='327', height='544', thumb_width='300', alt='An image of Amber wearing SlimeVR trackers, side view.') }}
+{{ ps.image(url='/img/vr/slime-skeleton-0-1.png', width='327', height='544', thumb_width='300', alt='An image of Amber wearing SlimeVR trackers, angled view.') }}
 </div>
 
 ### SlimeVR server internal skeleton
@@ -46,8 +46,8 @@ The images below illustrate the internal skeleton of SlimeVR calculated from the
 _Note: The illustrated skeleton does not accurately represent the skeleton used for SlimeVR, it is an artistic approximation._
 
 <div class="pswp-gallery is-flex is-gap-1">
-{{ ps.image(url='/img/vr/slime-skeleton-1.png', width='327', height='544', thumb_width='300', alt='An image of a SlimeVR skeleton with SlimeVR trackers and a SteamVR tracker on the waist, side view') }}
-{{ ps.image(url='/img/vr/slime-skeleton-1-1.png', width='327', height='544', thumb_width='300', alt='An image of a SlimeVR skeleton with SlimeVR trackers and a SteamVR tracker on the waist, angled view') }}
+{{ ps.image(url='/img/vr/slime-skeleton-1.png', width='327', height='544', thumb_width='300', alt='An image of a SlimeVR skeleton with SlimeVR trackers and a SteamVR tracker on the waist, side view.') }}
+{{ ps.image(url='/img/vr/slime-skeleton-1-1.png', width='327', height='544', thumb_width='300', alt='An image of a SlimeVR skeleton with SlimeVR trackers and a SteamVR tracker on the waist, angled view.') }}
 </div>
 
 ### SteamVR output
@@ -57,8 +57,8 @@ The images below illustrate the resulting SteamVR waist tracker. This tracker is
 _Note: The output does not include the skeleton, the outline is purely for illustrative purposes._
 
 <div class="pswp-gallery is-flex is-gap-1">
-{{ ps.image(url='/img/vr/slime-skeleton-2.png', width='327', height='544', thumb_width='300', alt='An image of a SteamVR tracker, side view') }}
-{{ ps.image(url='/img/vr/slime-skeleton-2-1.png', width='327', height='544', thumb_width='300', alt='An image of a SteamVR tracker, angled view') }}
+{{ ps.image(url='/img/vr/slime-skeleton-2.png', width='327', height='544', thumb_width='300', alt='An image of a SteamVR tracker, side view.') }}
+{{ ps.image(url='/img/vr/slime-skeleton-2-1.png', width='327', height='544', thumb_width='300', alt='An image of a SteamVR tracker, angled view.') }}
 </div>
 
 ## Credit

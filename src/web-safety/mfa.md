@@ -19,6 +19,14 @@ Multi-factor authentication (MFA) is a method of securing your accounts with a s
 
 ## Options
 
+### Proton Pass
+
+[Mobile / Desktop / Browser](https://proton.me/pass/download)
+
+### Bitwarden
+
+[Mobile / Desktop / Browser](https://bitwarden.com/download/)
+
 ### Duo Mobile
 
 [Mobile](https://duo.com/product/multi-factor-authentication-mfa/duo-mobile-app)
@@ -26,24 +34,9 @@ Multi-factor authentication (MFA) is a method of securing your accounts with a s
 - [Android](https://play.google.com/store/apps/details?id=com.duosecurity.duomobile)
 - [iOS](https://apps.apple.com/us/app/duo-mobile/id422663827)
 
-### Authy
-
-[Mobile / Desktop](https://authy.com/download/)
-
-- [Android](https://play.google.com/store/apps/details?id=com.authy.authy)
-- [iOS](https://apps.apple.com/us/app/authy/id494168017)
-
 ### Enpass
 
 [Mobile / Desktop / Browser](https://www.enpass.io/downloads/)
-
-(You can find all download links on their [website](https://www.enpass.io/downloads/))
-
-### Bitwarden
-
-[Mobile / Desktop / Browser](https://bitwarden.com/download/)
-
-(You can find all download links on their [website](https://bitwarden.com/download/))
 
 ### Microsoft Authenticator
 
@@ -51,6 +44,17 @@ Multi-factor authentication (MFA) is a method of securing your accounts with a s
 
 - [Android](https://play.google.com/store/apps/details?id=com.azure.authenticator)
 - [iOS](https://apps.apple.com/us/app/microsoft-authenticator/id983156458)
+
+### Authy
+
+[Mobile](https://authy.com/download/)
+
+- [Android](https://play.google.com/store/apps/details?id=com.authy.authy)
+- [iOS](https://apps.apple.com/us/app/authy/id494168017)
+
+### 2fast
+
+[Windows](https://github.com/2fast-team/2fast)
 
 ### LastPass Authenticator
 

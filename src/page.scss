@@ -16,6 +16,7 @@ $beige-lighter: #eff0eb;
 
 @use "bulma/sass/utilities/mixins";
 @use "bulma/sass/helpers/spacing";
+@use "bulma/sass/helpers/flexbox";
 
 @forward "bulma/sass/base";
 @forward "bulma/sass/themes";

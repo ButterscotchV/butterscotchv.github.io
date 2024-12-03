@@ -2,6 +2,8 @@
 layout: layouts/page.njk
 title: VR
 
+center_section: false
+
 eleventyNavigation:
   key: VR
   order: 2
