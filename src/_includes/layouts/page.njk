@@ -25,7 +25,7 @@
                     {% include "src/_includes/layouts/sidebar.njk" %}
                 </div>
                 <div class="column is-8-fullhd is-9-widescreen is-9-desktop mt-4-touch">
-                    <div class="section py-0">
+                    <div class="section py-0{% if center_section !== false %} is-flex is-justify-content-center{% endif %}">
                         <div class="content">
                             {{ content | safe }}
                         </div>

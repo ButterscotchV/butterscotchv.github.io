@@ -56,6 +56,12 @@ Bitwarden is by far my favourite. It's free (with an _optional_ subscription for
 
 [Securing Bitwarden](securing-bitwarden.md)
 
+### Proton Pass
+
+This is a relatively new password manager. It's free and easy to use.
+
+<https://proton.me/pass>
+
 ### Enpass
 
 Enpass is free and lets you store your passwords on your own computer instead of on the cloud, this allows you to choose who and what you trust with your data.
