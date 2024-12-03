@@ -29,10 +29,10 @@ Welcome to my homepage, I'm Butterscotch!
 * [GitHub](https://github.com/ButterscotchV)
 * [SlimeVR Discord](https://discord.gg/slimevr) as `butterscotch.v`
 
-## Art Accounts
+## Art Accounts (18+)
 
-* [Bluesky Art Feed](https://bsky.app/profile/butterscotchv.bsky.social)
-* [Itaku Art Gallery](https://itaku.ee/profile/butterscotch)
+* [Bluesky (Feed)](https://bsky.app/profile/butterscotchv.bsky.social)
+* [Itaku (Gallery)](https://itaku.ee/profile/butterscotch)
 
 </div>
 </div>
