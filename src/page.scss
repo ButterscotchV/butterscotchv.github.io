@@ -1,0 +1,59 @@
+@use "sass:map";
+
+$purple: #417921;
+$pink: #7cb655;
+$brown: #b4a2a2;
+$beige-light: #d1cdcd;
+$beige-lighter: #eff0eb;
+
+@use "bulma/sass/utilities" with (
+    $grey-dark: $brown,
+    $grey-light: $beige-light,
+    $primary: $purple,
+    $link: $pink,
+    $control-border-width: 2px,
+    $scheme-h: 20,
+    $scheme-s: 6%
+);
+
+@use "bulma/sass/utilities/mixins";
+@use "bulma/sass/helpers/spacing";
+
+@forward "bulma/sass/base";
+@forward "bulma/sass/themes";
+@forward "bulma/sass/helpers";
+@forward "bulma/sass/components/navbar";
+@forward "bulma/sass/components/menu";
+@forward "bulma/sass/layout/section";
+@forward "bulma/sass/grid/columns";
+@forward "bulma/sass/elements/content";
+
+$mid-padding: map.get(spacing.$spacing-values, "4");
+
+@include mixins.until-fullhd {
+    .section.p4-mid {
+        padding: $mid-padding;
+    }
+
+    .container.is-fluid.p4-mid {
+        padding: $mid-padding;
+    }
+}
+
+@include mixins.touch {
+    .section.p-0-touch {
+        padding: 0;
+    }
+
+    .container.is-fluid.p-0-touch {
+        padding: 0;
+    }
+
+    .mt-4-touch {
+        margin-top: map.get(spacing.$spacing-values, "4") !important;
+    }
+}
+
+.break-word {
+    word-break: break-word;
+}
