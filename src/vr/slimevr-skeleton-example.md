@@ -8,7 +8,7 @@ eleventyNavigation:
   order: 1
 
 image: /img/avatar.png
-description: "An example of how SlimeVR uses tracker rotations"
+description: "An example of how SlimeVR uses tracker rotations."
 ---
 {% include "photoswipe.njk" %}
 {% import "photoswipe.njk" as ps %}

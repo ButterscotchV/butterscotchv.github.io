@@ -8,7 +8,7 @@ eleventyNavigation:
   order: 3
 
 image: /img/avatar.png
-description: "A short guide to validating your SteamVR driver installation for SlimeVR"
+description: "A short guide to validating your SteamVR driver installation for SlimeVR."
 ---
 
 # {{ title }}

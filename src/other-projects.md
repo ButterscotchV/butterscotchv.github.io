@@ -7,7 +7,7 @@ eleventyNavigation:
   order: 3
 
 image: /img/avatar.png
-description: "Links to my other projects"
+description: "Links to my other projects."
 ---
 
 # {{ title }}

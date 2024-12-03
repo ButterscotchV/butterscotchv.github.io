@@ -9,7 +9,7 @@ eleventyNavigation:
   order: 2
 
 image: /img/avatar.png
-description: "Stuff about VR"
+description: "Stuff about VR."
 ---
 
 # {{ title }}
