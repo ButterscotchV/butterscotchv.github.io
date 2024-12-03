@@ -8,7 +8,7 @@ eleventyNavigation:
   order: 0
 
 image: /img/lock_icon.png
-description: "A guide to setting up multi-factor authentication (MFA)"
+description: "A guide to setting up multi-factor authentication (MFA)."
 ---
 
 # {{ title }}

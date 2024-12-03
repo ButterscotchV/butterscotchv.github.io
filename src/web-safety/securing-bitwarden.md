@@ -1,14 +1,14 @@
 ---
 layout: layouts/page.njk
-title: How to make Bitwarden more secure
+title: Securing Bitwarden
 
 eleventyNavigation:
-  key: How to make Bitwarden more secure
+  key: Securing Bitwarden
   parent: Web Safety
   order: 1
 
 image: /img/lock_icon.png
-description: "A guide to making Bitwarden more secure"
+description: "A guide to making Bitwarden more secure."
 ---
 {% include "photoswipe.njk" %}
 {% import "photoswipe.njk" as ps %}

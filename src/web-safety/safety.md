@@ -7,7 +7,7 @@ eleventyNavigation:
   order: 1
 
 image: /img/lock_icon.png
-description: "A guide to being safer with your passwords and accounts"
+description: "A guide to being safer with your passwords and accounts."
 ---
 
 # {{ title }}
