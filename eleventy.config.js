@@ -3,6 +3,7 @@ import pluginSyntaxHighlight from "@11ty/eleventy-plugin-syntaxhighlight";
 import pluginNavigation from "@11ty/eleventy-navigation";
 import { eleventyImageTransformPlugin } from "@11ty/eleventy-img";
 import htmlmin from "html-minifier-terser";
+import eleventySass from "eleventy-sass";
 
 /** @param {import("@11ty/eleventy").UserConfig} eleventyConfig */
 export default async function (eleventyConfig) {
@@ -72,6 +73,14 @@ export default async function (eleventyConfig) {
         // by default we use Eleventy’s built-in `slugify` filter:
         // slugify: eleventyConfig.getFilter("slugify"),
         // selector: "h1,h2,h3,h4,h5,h6", // default
+    });
+
+    eleventyConfig.addPlugin(eleventySass, {
+        sass: {
+            loadPaths: ["node_modules"],
+            includes: "_includes/stylesheets",
+            style: "compressed"
+        }
     });
 
     eleventyConfig.addShortcode("currentBuildDate", () => {
