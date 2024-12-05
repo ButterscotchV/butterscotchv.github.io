@@ -21,18 +21,20 @@
 
         <div class="section p-0-touch p-4-mid break-word">
             <div class="columns is-gapless is-desktop">
-                <div id="sidebar-menu" class="column is-2-fullhd is-3-widescreen is-3-desktop is-hidden-touch">
+                <aside id="sidebar-menu" class="column is-2-fullhd is-3-widescreen is-3-desktop is-hidden-touch">
                     {% include "src/_includes/layouts/sidebar.njk" %}
-                </div>
+                </aside>
                 <div class="column is-8-fullhd is-9-widescreen is-9-desktop mt-4-touch">
-                    <div class="section py-0{% if center_section !== false %} is-flex is-justify-content-center{% endif %}">
-                        <div class="content">
-                            {{ content | safe }}
+                    <div class="section py-0">
+                        <div class="container{% if center_section !== false %} is-flex is-justify-content-center{% endif %}">
+                            <main class="content min-width-0">
+                                {{ content | safe }}
+                            </main>
                         </div>
                     </div>
                 </div>
             </div>
-        </main>
+        </div>
 
         <script>{% getBundle "js" %}</script>
         <script type="module">{% getBundle "js", "module" %}</script>
