@@ -28,13 +28,12 @@ $beige-lighter: #eff0eb;
 @forward "bulma/sass/elements/content";
 
 $mid-padding: map.get(spacing.$spacing-values, "4");
-
 @include mixins.until-fullhd {
-    .section.p4-mid {
+    .section.p-4-mid {
         padding: $mid-padding;
     }
 
-    .container.is-fluid.p4-mid {
+    .container.is-fluid.p-4-mid {
         padding: $mid-padding;
     }
 }
