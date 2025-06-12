@@ -130,7 +130,7 @@ ffmpeg -i input.mp4 -map 0 -vf "scale=1920:1080:force_original_aspect_ratio=decr
 
 Bulk conversion using Windows batch scripting. Should probably use something better like PowerShell
 
-```bat
+```batch
 FOR /F "tokens=*" %G IN ('dir /b *.mp3') DO ffmpeg -i "%G" -b:a 48k "%~nG.opus"
 ```
 
