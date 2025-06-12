@@ -22,7 +22,7 @@ Bingus Search is a passion project of mine to assist with technical support, hel
 
 ## [SlimeVR Firmware Tool](https://slimevr-firmware.bscotch.ca/)
 
-I host a fork of the SlimeVR Firmware Tool for people to use as the original is no longer hosted or maintained. There is a version being developed to be integrated within the SlimeVR software, but as of writing, it is not yet released.
+I host a fork of the SlimeVR Firmware Tool for people to use as the original is no longer hosted or maintained. There is a version integrated within the SlimeVR software which I highly recommend using instead.
 
 ## [SlimeVR Testing Checklist](https://slimevr-testing.bscotch.ca/)
 
