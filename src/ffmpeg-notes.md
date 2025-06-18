@@ -70,6 +70,12 @@ ffmpeg -decoders
 ffmpeg -i input.mp4 -map 0 -c:v libx265 -crf 28 -c:a copy output.mp4
 ```
 
+#### Asher's command
+
+```bash
+ffmpeg -i "input.mkv" -c:v libx265 -preset slow -vf "fps=30, scale='min(1920,iw)':-2" -movflags +faststart -c:a aac "output.mp4"
+```
+
 ### Basic SVT-AV1
 
 #### Important options
