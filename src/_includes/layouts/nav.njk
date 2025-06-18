@@ -16,22 +16,24 @@ function toggleSidebar() {
 }
 {% endjs %}
 <script>
-function setTheme(dark) {
-    const html = document.documentElement;
-    const toggleIcon = document.getElementById("theme-toggle-icon")
-    if (dark) {
-        html.setAttribute("data-theme", "dark");
-        toggleIcon.textContent = "🌙";
-        localStorage.setItem("theme", "dark");
-    } else {
-        html.setAttribute("data-theme", "light");
-        toggleIcon.textContent = "☀️";
-        localStorage.setItem("theme", "light");
+function setTheme(dark, save) {
+    const theme = dark ? "dark" : "light";
+
+    document.documentElement.setAttribute("data-theme", theme);
+    document.getElementById("theme-toggle-icon").textContent = dark ? "🌙" : "☀️";
+
+    if (save) {
+        localStorage.setItem("theme", theme);
     }
 }
 
 function toggleTheme() {
-    setTheme(document.documentElement.getAttribute("data-theme") !== "dark");
+    setTheme(document.documentElement.getAttribute("data-theme") !== "dark", true);
+}
+
+function fromMedia(prefersDark) {
+    const saved = localStorage.getItem("theme");
+    setTheme(saved === "dark" || (!saved && prefersDark), false);
 }
 </script>
 
@@ -52,8 +54,9 @@ function toggleTheme() {
 
 <script>
 try {
-    var saved = localStorage.getItem("theme");
-    var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    setTheme(saved === "dark" || (!saved && prefersDark))
+    fromMedia(window.matchMedia("(prefers-color-scheme: dark)").matches);
+    window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", event => {
+        fromMedia(event.matches);
+    });
 } catch(e) {}
 </script>
