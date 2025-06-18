@@ -15,9 +15,32 @@ function toggleSidebar() {
     document.getElementById("sidebar-toggle").classList.toggle("is-active");
 }
 {% endjs %}
+<script>
+function setTheme(dark) {
+    const html = document.documentElement;
+    const toggleIcon = document.getElementById("theme-toggle-icon")
+    if (dark) {
+        html.setAttribute("data-theme", "dark");
+        toggleIcon.textContent = "🌙";
+        localStorage.setItem("theme", "dark");
+    } else {
+        html.setAttribute("data-theme", "light");
+        toggleIcon.textContent = "☀️";
+        localStorage.setItem("theme", "light");
+    }
+}
+
+function toggleTheme() {
+    setTheme(document.documentElement.getAttribute("data-theme") !== "dark");
+}
+</script>
+
 <nav class="navbar is-primary">
     <div class="navbar-brand">
         <a class="navbar-item logo-text" href="/">{{ metadata.title }}</a>
+        <a class="navbar-item is-size-4" role="button" aria-label="theme toggle" onclick="toggleTheme()" title="Toggle dark/light mode">
+            <span id="theme-toggle-icon">☀️</span>
+        </a>
         <a id="sidebar-toggle" class="navbar-burger" role="button" aria-label="menu" aria-expanded="false" onclick="toggleSidebar()">
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
@@ -26,3 +49,11 @@ function toggleSidebar() {
         </a>
     </div>
 </nav>
+
+<script>
+try {
+    var saved = localStorage.getItem("theme");
+    var prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    setTheme(saved === "dark" || (!saved && prefersDark))
+} catch(e) {}
+</script>
