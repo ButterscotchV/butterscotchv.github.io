@@ -19,50 +19,144 @@ Multi-factor authentication (MFA) is a method of securing your accounts with a s
 
 ## Options
 
-### Proton Pass
+<div class="columns is-multiline">
+<div class="column is-half">
+    <div class="card">
+        <header class="card-header">
+            <p class="card-header-title">Proton Pass</p>
+        </header>
+        <div class="card-content">
+            <div class="content">
+                Proton Pass is a secure password manager and authenticator from the makers of Proton Mail. It offers end-to-end encryption, supports generating login codes for your accounts, and is available on mobile, desktop, and browser platforms.
+            </div>
+        </div>
+        <footer class="card-footer is-nowrap is-flex-wrap-wrap">
+            <a class="card-footer-item" href="https://proton.me/pass/download" target="_blank" rel="noopener">Mobile / Desktop / Browser</a>
+        </footer>
+    </div>
+</div>
 
-[Mobile / Desktop / Browser](https://proton.me/pass/download)
+<div class="column is-half">
+    <div class="card">
+        <header class="card-header">
+            <p class="card-header-title">Bitwarden</p>
+        </header>
+        <div class="card-content">
+            <div class="content">
+                Open-source password manager that can also generate login codes for your accounts.
+            </div>
+        </div>
+        <footer class="card-footer is-nowrap is-flex-wrap-wrap">
+            <a class="card-footer-item" href="https://bitwarden.com/download/" target="_blank" rel="noopener">Mobile / Desktop / Browser</a>
+        </footer>
+    </div>
+</div>
 
-### Bitwarden
+<div class="column is-half">
+    <div class="card">
+        <header class="card-header">
+            <p class="card-header-title">Duo Mobile</p>
+        </header>
+        <div class="card-content">
+            <div class="content">
+                Authenticator app often used by schools and workplaces. Can generate login codes or approve sign-ins.
+            </div>
+        </div>
+        <footer class="card-footer is-nowrap is-flex-wrap-wrap">
+            <a class="card-footer-item" href="https://duo.com/product/multi-factor-authentication-mfa/duo-mobile-app" target="_blank" rel="noopener">Mobile</a>
+            <a class="card-footer-item" href="https://play.google.com/store/apps/details?id=com.duosecurity.duomobile" target="_blank" rel="noopener">Android</a>
+            <a class="card-footer-item" href="https://apps.apple.com/us/app/duo-mobile/id422663827" target="_blank" rel="noopener">iOS</a>
+        </footer>
+    </div>
+</div>
 
-[Mobile / Desktop / Browser](https://bitwarden.com/download/)
+<div class="column is-half">
+    <div class="card">
+        <header class="card-header">
+            <p class="card-header-title">Enpass</p>
+        </header>
+        <div class="card-content">
+            <div class="content">
+                Password manager that can also generate the codes you need for logging in securely.
+            </div>
+        </div>
+        <footer class="card-footer is-nowrap is-flex-wrap-wrap">
+            <a class="card-footer-item" href="https://www.enpass.io/downloads/" target="_blank" rel="noopener">Mobile / Desktop / Browser</a>
+        </footer>
+    </div>
+</div>
 
-### Duo Mobile
+<div class="column is-half">
+    <div class="card">
+        <header class="card-header">
+            <p class="card-header-title">Microsoft Authenticator</p>
+        </header>
+        <div class="card-content">
+            <div class="content">
+                Authenticator app from Microsoft. Can generate login codes and also lets you approve sign-ins with a tap.
+            </div>
+        </div>
+        <footer class="card-footer is-nowrap is-flex-wrap-wrap">
+            <a class="card-footer-item" href="https://www.microsoft.com/en-us/security/mobile-authenticator-app" target="_blank" rel="noopener">Mobile</a>
+            <a class="card-footer-item" href="https://play.google.com/store/apps/details?id=com.azure.authenticator" target="_blank" rel="noopener">Android</a>
+            <a class="card-footer-item" href="https://apps.apple.com/us/app/microsoft-authenticator/id983156458" target="_blank" rel="noopener">iOS</a>
+        </footer>
+    </div>
+</div>
 
-[Mobile](https://duo.com/product/multi-factor-authentication-mfa/duo-mobile-app)
+<div class="column is-half">
+    <div class="card">
+        <header class="card-header">
+            <p class="card-header-title">Authy</p>
+        </header>
+        <div class="card-content">
+            <div class="content">
+                Authenticator app that works on multiple devices and can back up your codes securely.
+            </div>
+        </div>
+        <footer class="card-footer is-nowrap is-flex-wrap-wrap">
+            <a class="card-footer-item" href="https://authy.com/download/" target="_blank" rel="noopener">Mobile</a>
+            <a class="card-footer-item" href="https://play.google.com/store/apps/details?id=com.authy.authy" target="_blank" rel="noopener">Android</a>
+            <a class="card-footer-item" href="https://apps.apple.com/us/app/authy/id494168017" target="_blank" rel="noopener">iOS</a>
+        </footer>
+    </div>
+</div>
 
-- [Android](https://play.google.com/store/apps/details?id=com.duosecurity.duomobile)
-- [iOS](https://apps.apple.com/us/app/duo-mobile/id422663827)
+<div class="column is-half">
+    <div class="card">
+        <header class="card-header">
+            <p class="card-header-title">2fast</p>
+        </header>
+        <div class="card-content">
+            <div class="content">
+                Free and open-source app for Windows that can generate login codes for your accounts.
+            </div>
+        </div>
+        <footer class="card-footer is-nowrap is-flex-wrap-wrap">
+            <a class="card-footer-item" href="https://github.com/2fast-team/2fast" target="_blank" rel="noopener">Windows</a>
+        </footer>
+    </div>
+</div>
 
-### Enpass
-
-[Mobile / Desktop / Browser](https://www.enpass.io/downloads/)
-
-### Microsoft Authenticator
-
-[Mobile](https://www.microsoft.com/en-us/security/mobile-authenticator-app)
-
-- [Android](https://play.google.com/store/apps/details?id=com.azure.authenticator)
-- [iOS](https://apps.apple.com/us/app/microsoft-authenticator/id983156458)
-
-### Authy
-
-[Mobile](https://authy.com/download/)
-
-- [Android](https://play.google.com/store/apps/details?id=com.authy.authy)
-- [iOS](https://apps.apple.com/us/app/authy/id494168017)
-
-### 2fast
-
-[Windows](https://github.com/2fast-team/2fast)
-
-### LastPass Authenticator
-
-[Mobile / Desktop](https://lastpass.com/auth/)
-
-- [Android](https://play.google.com/store/apps/details?id=com.lastpass.authenticator)
-- [iOS](https://apps.apple.com/us/app/lastpass-authenticator/id1079110004)
-- [Windows](https://www.microsoft.com/en-us/p/lastpass-authenticator/9nblggh5l9d7)
+<div class="column is-half">
+    <div class="card">
+        <header class="card-header">
+            <p class="card-header-title">LastPass Authenticator</p>
+        </header>
+        <div class="card-content">
+            <div class="content">
+                Authenticator app from LastPass. Can generate login codes and supports one-tap sign-in approval.
+            </div>
+        </div>
+        <footer class="card-footer is-nowrap is-flex-wrap-wrap">
+            <a class="card-footer-item" href="https://lastpass.com/auth/" target="_blank" rel="noopener">Mobile / Desktop</a>
+            <a class="card-footer-item" href="https://play.google.com/store/apps/details?id=com.lastpass.authenticator" target="_blank" rel="noopener">Android</a>
+            <a class="card-footer-item" href="https://apps.apple.com/us/app/lastpass-authenticator/id1079110004" target="_blank" rel="noopener">iOS</a>
+            <a class="card-footer-item" href="https://www.microsoft.com/en-us/p/lastpass-authenticator/9nblggh5l9d7" target="_blank" rel="noopener">Windows</a>
+        </footer>
+    </div>
+</div>
+</div>
 
 ## See Also
 

@@ -30,7 +30,7 @@ image: /img/avatar.png
 </div>
 <div class="column">
 
-<div class="card mb-4">
+<div class="card">
     <header class="card-header">
         <p class="card-header-title is-justify-content-center">
         Social/Work Accounts

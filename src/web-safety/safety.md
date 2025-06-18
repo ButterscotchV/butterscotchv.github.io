@@ -34,60 +34,107 @@ If you're hesitant to use a password manager because you don't want to copy and 
 
 ## What are my options?
 
-In the [options section](#options), we provide a list of password managers with a brief description of each one. You can decide which one you want to use based on your own preferences, but it's important to consider all your options and their pros and cons.
+In this section, we provide a list of password managers with a brief description of each one. You can decide which one you want to use based on your own preferences, but it's important to consider all your options and their pros and cons.
+
+<div class="columns is-multiline">
+<div class="column is-half">
+    <div class="card">
+        <header class="card-header">
+            <p class="card-header-title">Bitwarden</p>
+        </header>
+        <div class="card-content">
+            <div class="content">
+                Bitwarden is a free, open-source password manager that works on all major platforms and browsers. It offers secure password storage, sharing, and autofill, with optional premium features.
+                <br>
+                <br>
+                See also: <a href="securing-bitwarden.md">Securing Bitwarden</a>
+            </div>
+        </div>
+        <footer class="card-footer is-nowrap is-flex-wrap-wrap">
+            <a class="card-footer-item" href="https://bitwarden.com/" target="_blank" rel="noopener">Website</a>
+            <a class="card-footer-item" href="https://mshelton.medium.com/bitwarden-for-beginners-74cf93679457" target="_blank" rel="noopener">Beginners Guide</a>
+            <a class="card-footer-item" href="https://bitwarden.com/help/" target="_blank" rel="noopener">Help Center</a>
+        </footer>
+    </div>
+</div>
+
+<div class="column is-half">
+    <div class="card">
+        <header class="card-header">
+            <p class="card-header-title">Proton Pass</p>
+        </header>
+        <div class="card-content">
+            <div class="content">
+                Proton Pass is a password manager from the makers of Proton Mail. It offers end-to-end encryption, a clean and simple interface, and is available on desktop, mobile, and as a browser extension. Proton Pass can store passwords, notes, and email aliases, and is designed with privacy in mind.
+            </div>
+        </div>
+        <footer class="card-footer is-nowrap is-flex-wrap-wrap">
+            <a class="card-footer-item" href="https://proton.me/pass" target="_blank" rel="noopener">Website</a>
+        </footer>
+    </div>
+</div>
+
+<div class="column is-half">
+    <div class="card">
+        <header class="card-header">
+            <p class="card-header-title">Enpass</p>
+        </header>
+        <div class="card-content">
+            <div class="content">
+                Enpass is free and lets you store your passwords on your own computer instead of on the cloud, this allows you to choose who and what you trust with your data.
+            </div>
+        </div>
+        <footer class="card-footer is-nowrap is-flex-wrap-wrap">
+            <a class="card-footer-item" href="https://www.enpass.io/" target="_blank" rel="noopener">Website</a>
+        </footer>
+    </div>
+</div>
+
+<div class="column is-half">
+    <div class="card">
+        <header class="card-header">
+            <p class="card-header-title">1Password</p>
+        </header>
+        <div class="card-content">
+            <div class="content">
+                1Password is a paid password manager known for its easy-to-use design, strong security, and helpful features like password sharing and security alerts. Works on all major platforms.
+            </div>
+        </div>
+        <footer class="card-footer is-nowrap is-flex-wrap-wrap">
+            <a class="card-footer-item" href="https://1password.com/" target="_blank" rel="noopener">Website</a>
+            <a class="card-footer-item" href="https://mshelton.medium.com/introduction-to-password-managers-5e15baa8b26e" target="_blank" rel="noopener">Beginners Guide</a>
+        </footer>
+    </div>
+</div>
+
+<div class="column is-half">
+    <div class="card">
+        <header class="card-header">
+            <p class="card-header-title">LastPass</p>
+        </header>
+        <div class="card-content">
+            <div class="content">
+                LastPass is only <em>partially</em> free. You are restricted to using only one device "type" with the free plan, either PC or mobile. If you wish to use this service, you should consider that LastPass has many issues in the company itself, you can look at the top of the beginners guide for more information.
+                <br>
+                <br>
+                Additionally, LastPass experienced a significant security incident where their vaults were compromised, and the information stored within them are actively being misused. You can find more information about this breach at:
+                <ul>
+                    <li><a href="https://blog.lastpass.com/2022/12/notice-of-recent-security-incident/" target="_blank" rel="noopener">LastPass Security Incident</a></li>
+                    <li><a href="https://www.wired.com/story/lastpass-breach-vaults-password-managers/" target="_blank" rel="noopener">Wired: LastPass Breach</a></li>
+                </ul>
+            </div>
+        </div>
+        <footer class="card-footer is-nowrap is-flex-wrap-wrap">
+            <a class="card-footer-item" href="https://www.lastpass.com/" target="_blank" rel="noopener">Website</a>
+            <a class="card-footer-item" href="https://mshelton.medium.com/lastpass-for-beginners-e921f35d4114" target="_blank" rel="noopener">Beginners Guide</a>
+        </footer>
+    </div>
+</div>
+</div>
 
 ## What more can I do?
 
 For extra protection, you can use [Multi-Factor Authentication (MFA)](mfa.md), also known as Two-Factor Authentication (or 2FA). This is a method that uses an app to generate a random passcode every 30 seconds. This makes it very difficult for someone to log into your account without having physical access to your phone.
-
-## Options
-
-### Bitwarden
-
-Bitwarden is by far my favourite. It's free (with an _optional_ subscription for a very low price), open source, and it's fairly easy to use.
-
-<https://bitwarden.com/>
-
-[Beginners Guide](https://mshelton.medium.com/bitwarden-for-beginners-74cf93679457)
-
-[Bitwarden Help Center](https://bitwarden.com/help/)
-
-#### See Also
-
-[Securing Bitwarden](securing-bitwarden.md)
-
-### Proton Pass
-
-This is a relatively new password manager. It's free and easy to use.
-
-<https://proton.me/pass>
-
-### Enpass
-
-Enpass is free and lets you store your passwords on your own computer instead of on the cloud, this allows you to choose who and what you trust with your data.
-
-<https://www.enpass.io/>
-
-### 1Password
-
-1Password requires a subscription to use but it's worth what you pay for it. They appear to have fairly good security that is maintained over time.
-
-<https://1password.com/>
-
-[Beginners Guide](https://mshelton.medium.com/introduction-to-password-managers-5e15baa8b26e)
-
-### LastPass
-
-LastPass is only _partially_ free. You are restricted to using only one device "type" with the free plan, either PC or mobile. If you wish to use this service, you should consider that LastPass has many issues in the company itself, you can look at the top of the beginners guide for more information.
-
-Additionally, LastPass experienced a significant security incident where their vaults were compromised, and the information stored within them are actively being misused. You can find more information about this breach at:
-
-- <https://blog.lastpass.com/2022/12/notice-of-recent-security-incident/>
-- <https://www.wired.com/story/lastpass-breach-vaults-password-managers/>
-
-<https://www.lastpass.com/>
-
-[Beginners Guide](https://mshelton.medium.com/lastpass-for-beginners-e921f35d4114)
 
 ## See Also
 
