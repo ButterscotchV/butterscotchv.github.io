@@ -23,6 +23,7 @@ $beige-lighter: #eff0eb;
 @forward "bulma/sass/helpers";
 @forward "bulma/sass/components/navbar";
 @forward "bulma/sass/components/menu";
+@forward "bulma/sass/components/card";
 @forward "bulma/sass/layout/section";
 @forward "bulma/sass/grid/columns";
 @forward "bulma/sass/layout/container";
@@ -36,6 +37,10 @@ $mid-padding: map.get(spacing.$spacing-values, "4");
 
     .container.is-fluid.p-4-mid {
         padding: $mid-padding;
+    }
+
+    .profile-card {
+        max-width: 400px;
     }
 }
 
@@ -51,6 +56,10 @@ $mid-padding: map.get(spacing.$spacing-values, "4");
     .mt-4-touch {
         margin-top: map.get(spacing.$spacing-values, "4") !important;
     }
+
+    .profile-card {
+        max-width: 300px;
+    }
 }
 
 .break-word {
@@ -59,4 +68,8 @@ $mid-padding: map.get(spacing.$spacing-values, "4");
 
 .min-width-0 {
     min-width: 0;
+}
+
+.is-nowrap {
+    white-space: nowrap;
 }
