@@ -134,7 +134,23 @@ ffmpeg -i input.mp4 -map 0 -vf "scale=1920:1080:force_original_aspect_ratio=decr
 
 ### Batch encode
 
-Bulk conversion using Windows batch scripting. Should probably use something better like PowerShell
+Single line bulk file encoding commands.
+
+#### PowerShell
+
+```powershell
+Get-ChildItem -Recurse -Filter *.mp3 | ForEach-Object { ffmpeg -i $_.FullName -b:a 48k (Join-Path $_.DirectoryName "$($_.BaseName).opus") }
+```
+
+Or to preserve the original last modified date:
+
+```powershell
+Get-ChildItem -Recurse -Filter *.mp3 | ForEach-Object { $out = (Join-Path $_.DirectoryName "$($_.BaseName).opus"); ffmpeg -i $_.FullName -b:a 48k $out; (Get-Item $out).LastWriteTime = $_.LastWriteTime }
+```
+
+#### Batch script
+
+Bulk Opus encoding using Windows batch scripting. Should probably use something better like PowerShell.
 
 ```batch
 FOR /F "tokens=*" %G IN ('dir /b *.mp3') DO ffmpeg -i "%G" -b:a 48k "%~nG.opus"
