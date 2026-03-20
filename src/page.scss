@@ -30,6 +30,11 @@ $beige-lighter: #eff0eb;
 @forward "bulma/sass/elements/content";
 
 $mid-padding: map.get(spacing.$spacing-values, "4");
+
+.profile-card {
+    max-width: 400px;
+}
+
 @include mixins.until-fullhd {
     .section.p-4-mid {
         padding: $mid-padding;
@@ -37,10 +42,6 @@ $mid-padding: map.get(spacing.$spacing-values, "4");
 
     .container.is-fluid.p-4-mid {
         padding: $mid-padding;
-    }
-
-    .profile-card {
-        max-width: 400px;
     }
 }
 
